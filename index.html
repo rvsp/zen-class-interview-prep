@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zen Class | Interview Preparation Questions</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="stle.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="">HTML Questions <span class="sr-only">(current)</span></a>
+            </li>
+           
+            <li class="nav-item active">
+              <a class="nav-link" href="/css-quest.html" >CSS Questions</a>
+            </li>
+        
+          </ul>
+        </div>
+      </nav>
+    <h1>Interview Questions on HTML</h1>
+    <div class="container">
+        <div class="column">
+            <div class="row-md-6 text-center m-3"><img src="assets/image.png" alt="no img"></div>
+            <div class="row-md-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                1.What is HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                HTML is short for HyperText Markup Language and is the language of the World Wide Web. It is the standard text formatting language used 
+                                for creating and displaying pages on the Web. HTML documents are made up of two things: the content and the tags that format it
+                                for proper display on pages.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                2. What does &lt;!DOCTYPE HTML&gt; means to do?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The DOCTYPE declaration is an instruction to the web browser about what version of 
+                                HTML the page is written in. This ensures that the web page is parsed the same way by different web browsers. 
+                                In HTML 4.01, the DOCTYPE declaration refers to a document type definition (DTD).
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                3.What is a key difference between HTML elements and tags?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                HTML elements communicate to the browser to render text. When the elements are enclosed by brackets <mark> &lt; &gt;</mark>, they form HTML tags. 
+                                Most of the time, tags come in a pair and surround content.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                4.What is the difference between &lt;div&gt; tag and &lt;span&gt; tag and give examples?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The primary difference between div and span tag is their default behavior. <mark>&lt;div&gt;</mark>  is a block-level-element and a <mark>&lt;span&gt;</mark> is an inline element.
+                                <ul>
+                                <li><mark>&lt;div&gt;</mark> is a block level element which means it will render it on it's own line with a width of a 100% of the parent element.</li><br>
+                                <li><mark>&lt;span&gt;</mark> is an inline element which means it will render on the same line as the previous element, if it is also an inline element, 
+                                    and it's width will be determined by it's content.</li>
+                                    </ul><br>
+
+                                    <b>Ex:</b> &lt;div&gt; Demo Text, with &lt;span&gt;some other&lt;/span&gt; text.&lt;/div&gt;
+                            </div>
+                        </div>
+                        </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                5.Explain the difference between block elements and inline elemenets?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <b>Block elements :</b> &lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;.<br>
+                                <b>Inline elements :</b> &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;,&lt;i&gt;, &lt;img&gt;.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                6.What are the non-semantic elements?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <mark>&lt;div&gt;</mark> and <mark>&lt;span&gt;</mark> tags are the non-semantic elements.They tells nothing about its content.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                7.What is a manifest file in html?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The manifest attribute references a URL for a cache manifest file, a text file that lists URLs that browsers should cache for your application. 
+                                You should include the manifest attribute on each page of your site that you want cached.
+                                The manifest file describes essential information about your app to the Android build tools, the Android operating system, and Google Play. 
+                                Among many other things, the manifest file is required to declare the app's package name, which usually matches your code's namespace.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                8.How many tags can be used to separate a section of texts?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Three tags are used to separate the texts.<br><br>
+                                
+                                    1) <mark>&lt;br&gt;</mark> tag - Usually &lt;br&gt; tag is used to separate the line of text. It breaks the current line and conveys the flow to the next line.<br><br>
+                                    2) <mark>&lt;p&gt;</mark> tag - The &lt;p&gt; tag contains the text in the form of a new paragraph.<br><br>
+                                    3) <mark>&lt;blockquote&gt;</mark> tag - It is used to define a large quoted section. If you have a large quotation, then put the entire text within &lt;blockquote&gt;...&lt;/blockquote&gt; tag.
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingNine">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                9.What is SVG?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                1) HTML SVG is used to describe the two-dimensional vector and vector/raster graphics. SVG images and their behaviors are defined in XML text files. <br>
+                                2) So as XML files, you can create and edit an SVG image with the text editor. <br>
+                                3) It is mostly used for vector type diagrams like pie charts, 2-Dimensional graphs in an X, Y coordinate system.<br><br>
+
+                                <b>Ex:</b><br>
+                                &lt;svg width="100" height="100"&gt;<br>
+                                &lt;circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="4" fill="red" /&gt; <br>   
+                                &lt;/svg&gt;<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTen">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                10.What is the  use of required attribute in html?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                            <div class="card-body">
+                                It forces a user to fill text on the text field or text area before submitting the form. 
+                                It is used for form validation.<br><br>
+
+
+                                <b>Ex:</b>   Name required - &lt;input type="text" name="name" required&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEleven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                11.What happens when &lt;DOCTYPE&gt; is not given?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The web page is rendered in quirks mode.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwelve">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                12.What is the use of an iframe tag?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+                            <div class="card-body">
+                 An iframe is used to display a web page within a web page.<br><br>
+
+                                <b>Syntax:</b> &lt;iframe src="URL"&gt;&lt;/iframe&gt;<br> <br>
+
+                                <b>Ex:</b>   &lt;iframe src="https://getbootstrap.com/" width="500px" height="200px"&gt;&lt;/iframe&gt;
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirteen">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                13.What is marquee?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+                            <div class="card-body">
+                 Marquee is used to put the scrolling text on a web page. It scrolls the image or text up, down, left or right automatically. 
+                      You should put the text which you want to scroll within the <mark>&lt;marquee&gt;...&lt;/marquee&gt;</mark> tag.
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFourteen">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                14.Is it possible to change the color of the bullet?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+                            <div class="card-body">
+                The color of the bullet is always the color of the first text of the list. 
+                 So, if you want to change the color of the bullet, you must change the color of the text.
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFifteen">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                15.What is a style sheet?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionExample">
+                            <div class="card-body">
+                  A style sheet is used to build a consistent, transportable, and well-designed style template. You can add these templates on several different web pages. 
+                       It describes the look and formatting of a document written in markup language.
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSixteen">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                                16.How can you higlight a text?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+                            <div class="card-body">
+                  The HTML Mark Tag <mark>&lt;mark&gt;</mark> represents text which is marked or highlighted for reference or notation purposes, 
+                      due to the marked passage's relevance or importance in the enclosing context.
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeventeen">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                                17.What is the head tag and Which elements are used in head tag?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordionExample">
+                            <div class="card-body">
+                                1) The <mark>&lt;head&gt;</mark> tag in HTML is used to define the head portion of the document which contains information related to the document.<br> 2) The <mark>&lt;head&gt;</mark> 
+                                tag contains other head elements such as <mark>&lt;title&gt;</mark> ,<mark>&lt;meta&gt;</mark>, <mark>&lt;link&gt;</mark>, <mark>&lt;style&gt;</mark> ,<mark>&lt;link&gt;</mark> etc.<br>
+                                 3) In HTML 4.01 the <mark>&lt;head&gt;</mark> element was mandatory but in HTML5, the head element can be omitted.
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEighteen">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                               18.How to insert a copyright symbol on a browser page?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordionExample">
+                            <div class="card-body">
+                                You can insert a copyright symbol by using <mark>& copy</mark> or <mark>& #169</mark> in an HTML file.
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingNinteen">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNinteen" aria-expanded="false" aria-controls="collapseNinteen">
+                                19.How to create a nested webpage in HTML?
+                                
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseNinteen" class="collapse" aria-labelledby="headingNinteen" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The HTML <mark>&lt;iframe&gt;</mark> tag is used to display a nested webpage. In other words, it represents a webpage within a webpage. <br>
+                                   The HTML <mark>&lt;iframe&gt;</mark> tag defines an inline frame.<br><br>
+                                <b>Ex:</b><br><br>
+
+                                &lt;!DOCTYPE html&gt; <br>   
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>       
+                                &lt;iframe src="SOURCE LINK" height="300" width="400" &gt;&lt;/iframe&gt;<br>    
+                                &lt;/body&gt;    <br>
+                                &lt;/html&gt;  
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwenty">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                                20.What is the difference between an "attribute" and a "property" in HTML?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Attributes are defined by HTML. Properties are accessed from DOM (Document Object Model) nodes.<br><br>
+
+                                 <b>Example:</b>   &lt;input id="inputId" type="text" value="Hello World!" /&gt;<br><br>
+
+                                    The value property reflects the current text-content inside the input box, whereas the value attribute contains 
+                                    the initial text-content of the value attribute from the HTML source code.<br><br>
+ 
+                                    <b>Attribute:</b><br><br> 1)Attributes are defined by HTML.<br>
+                                                2)The value of an attribute is constant.<br>
+                                                 3)These are used to initialize the DOM properties.	<br><br>
+ 
+                                    <b>Property:</b><br><br> 1)Properties are defined by the DOM.<br>
+                                              2)The value of a property is variable.<br>
+                                                3)No such job defined.<br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
+                                21.What are void elements in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyOne" class="collapse" aria-labelledby="headingTwentyOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul>
+                                <li>HTML elements which do not have closing tags or do not need to be closed are Void elements.</li>
+                                </ul>
+                                <b>Example:</b> &lt;br /&gt;, &lt;img /&gt;, &lt;hr /&gt;, etc.<br><br>
+                                <ul>
+                                <li>These are also called as Empty elements or Self-closing elements.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwentytwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">
+                                22. What is the difference between the "id" attribute and the "class" attribute of HTML elements?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentytwo" class="collapse" aria-labelledby="headingTwentytwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Multiple elements in HTML can have the same "class" value, 
+                                whereas a value of "id" attribute of one element cannot be associated with another HTML element.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwentythree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentythree" aria-expanded="false" aria-controls="collapseTwentythree">
+                                23.What are formating tags in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentythree" class="collapse" aria-labelledby="headingTwentythree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <b>&lt;b&gt;</b> - makes text bold<br>
+                                <b>&lt;i&gt;</b> - makes text italic<br>
+                                    <b>&lt;em&gt;</b> - makes text italic but with added semantics importance<br>
+                                        <b>&lt;big&gt;</b> - increases the font size of the text by one unit<br>
+                                            <b>&lt;small&gt;</b> - decreases the font size of the text by one unit<br>
+                                                <b>&lt;sub&gt;</b> - makes the text a subscript<br>
+                                                    <b>&lt;sup&gt;</b> - makes the text a superscript<br>
+                                                        <b>&lt;del&gt;</b> - displays as strike out text<br>
+                                                            <b>&lt;strong&gt;</b> - marks the text as important<br>
+                                                                <b>&lt;mark&gt;</b> - highlights the text<br>
+                                                                    <b>&lt;ins&gt;</b> - displays as added text<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyfour">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyfour" aria-expanded="false" aria-controls="collapseTwentyfour">
+                                24.What is meant by Semantic and what are the semantic elements?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyfour" class="collapse" aria-labelledby="headingTwentyfour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <b>Semantic:</b> <br><br>
+                                    1) Semantic HTML is a style of coding, where the tags convey the meaning of the text. <br>
+                                    2) HTML uses semantics to reinforce the semantics or purpose of the content.<br>
+                                    3) It's clearly describes the meaning to both the browser and the developer.<br><br>
+                                
+                 
+                      <b>Semantic Elements:</b> &lt;form&gt;, &lt;table&gt;, &lt;article&gt;, &lt;aside&gt;, &lt;details&gt;, &lt;figcaption&gt;, &lt;figure&gt;, &lt;footer&gt;, &lt;header&gt;, &lt;main&gt;, &lt;mark&gt;, &lt;nav&gt;, 
+                      &lt;section&gt;, &lt;summary&gt;, &lt;time&gt; clearly defines its content.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyfive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyfive" aria-expanded="false" aria-controls="collapseTwentyfive">
+                                25.What are Lists in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyfive" class="collapse" aria-labelledby="headingTwentyfive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                HTML lists are used to group a set of related items in lists. It is defined with an <mark>&lt;li&gt;</mark> tag.<br><br>
+
+                                    Some commonly used HTML lists:<br><br>
+                               
+                                    1) Ordered List (HTML tag: <mark>&lt;ol&gt;</mark>)<br>
+                                    2) Unordered List (HTML tag: <mark>&lt;ul&gt;</mark>)<br>
+                                    3) Description List (HTML tag: <mark>&lt;dl&gt;</mark>)<br>
+                                    4) Menu List (HTML tag: <mark>&lt;menu&gt;</mark>)<br>
+                                    5) Directory List (HTML tag: <mark>&lt;dir&gt;</mark>)<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwentysix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentysix" aria-expanded="false" aria-controls="collapseTwentysix">
+                                26.What are Forms in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentysix" class="collapse" aria-labelledby="headingTwentysix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Forms are used to collect the user information when they are filled, and details are provided to save into the database.<br><br>
+
+                                <b>Ex:</b><br>  
+                                &lt;form&gt;<br>
+                                &lt;label for="fname">First name:&lt;/label&gt;<br>
+                                &lt;input type="text" id="fname" name="fname"&gt;<br>
+                                &lt;label for="lname">Last name:&lt;/label&gt;<br>
+                                &lt;input type="text" id="lname" name="lname"&gt;<br>
+                                &lt;/form&gt;
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyseven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyseven" aria-expanded="false" aria-controls="collapseTwentyseven">
+                                27.What is  meta tag?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyseven" class="collapse" aria-labelledby="headingTwentyseven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The <mark>&lt;meta&gt;</mark> tag defines metadata about an HTML document. Metadata is data (information) about data.
+                                <mark>&lt;meta&gt;</mark> tags always place inside the <mark>&lt;head&gt;</mark> element.<br><br>
+                                1)They are used to specify character set, page description, keywords, author of the document, and viewport settings.<br>
+                                2)It is machine parsable.<br>
+                                3)It is intended for the browser.<br><br>
+                           
+                               <b>Ex:</b><br>
+                               &lt;!DOCTYPE html&gt;<br>
+                               &lt;html&gt;<br>
+                               &lt;head&gt;<br>
+                               &lt;meta name="description" content="I am a web page with description"&gt;<br> 
+                               &lt;title&gt;Home Page&lt;/title&gt;<br>
+                               &lt;/head&gt;<br>
+                               &lt;body&gt;&lt;../body&gt;<br>
+                               &lt;/html&gt;<br>
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwentyeight">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyeight" aria-expanded="false" aria-controls="collapseTwentyeight">
+                                28.Why is the Embed Tag Used in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentyeight" class="collapse" aria-labelledby="headingTwentyeight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                An Embed Tag is used for including a Video or Audio in an HTML Document. A source of audio or video file 
+                                to be displayed on the webpage is defined within an Embed tag.<br><br>
+                               <b>Syntax:</b>  &lt;EMBED&gt;..&gt;&lt;/EMBED&gt;.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwentynine">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentynine" aria-expanded="false" aria-controls="collapseTwentynine">
+                                29.What is Character Encoding?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwentynine" class="collapse" aria-labelledby="headingTwentynine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                To display an HTML page correctly, a web browser must know which character set (character encoding) to use. <br>This is specified in the tag:<br><br>
+
+                                <b>Ex:</b>  &lt;meta charset="UTF-8"&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirty">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirty" aria-expanded="false" aria-controls="collapseThirty">
+                                30.Which tag is used for representing the result of a calculation? Explain its attributes.
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The <mark>&lt;output&gt;</mark> tag is used for representing the result of a calculation. It has the following attributes:<br><br>
+
+                                    <b>for</b> - It defines the relationship between the elements used in calculation and result.<br>
+                                    <b>form</b> - This is used to define the form the output element belongs to.<br>
+                                    <b>name</b> - The name of the output element.<br><br>
+                                    <b>Ex:</b><br><br>
+                                
+                                    &lt;form oninput = "result.value=parseInt(n1.value)+parseInt(n2.value)"&gt;<br>
+                                    &lt;input type = "number" name = "n1" value = "1" /&gt;+<br>
+                                    &lt;input type = "number" name = "n2" value = "2" /&gt;<br /><br>
+                                         The output is: &lt;output name = "result"&gt;&lt;/output&gt;<br>
+                                         &lt;/form&gt;
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyone">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyone" aria-expanded="false" aria-controls="collapseThirtyone">
+                                31.Explain HTML5 Graphics.
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyone" class="collapse" aria-labelledby="headingThirtyone" data-parent="#accordionExample">
+                            <div class="card-body">
+                                HTML5 supports two kinds of graphics:<br><br>
+
+                            <b>1) Canvas</b> - It is like drawing on a whitepaper or a blank webpage. We can add different graphic designs
+                                             on web pages with available methods for drawing various geometrical shapes.<br><br>
+                                
+                                <b>Ex:</b><br><br>
+                                &lt;!DOCTYPE HTML&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+                                &lt;canvas width="300" height="100" style="border:2px solid;"&gt;&lt;/canvas&gt;<br>  
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br><br>
+                            
+                                <b>2) SVG</b> - Scalable Vector Graphics are used mostly for diagrams or icons. It follows the XML format.<br><br>
+                            
+                                <b>Ex:</b><br><br>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+                                &lt;svg width="400" height="110"&gt;<br>
+                                &lt;rect width="300" height="100" style="fill:#FFF;stroke-width:2;stroke:#000" /&gt;<br>
+                                &lt;/svg&gt;<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirtytwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtytwo" aria-expanded="false" aria-controls="collapseThirtytwo">
+                                32.What are the New tags in Media Elements in HTML5?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtytwo" class="collapse" aria-labelledby="headingThirtytwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                1) <b>&lt;audio&gt;</b> - Used for sounds, audio streams, or music, embed audio content without any additional plug-in.<br>
+                                2) <b>&lt;video&gt;</b> - Used for video streams, embed video content etc.<br>
+                                3) <b>&lt;source&gt;</b> - Used for multiple media resources in media elements, such as audio, video, etc.<br>
+                                4) <b>&lt;embed&gt;</b> - Used for an external application or embedded content.<br>
+                                5) <b>&lt;track&gt;</b> - Used for subtitles in the media elements such as video or audio.<br>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirtythree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtythree" aria-expanded="false" aria-controls="collapseThirtythree">
+                                33.Is HTML attribute values are case-sensitive?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtythree" class="collapse" aria-labelledby="headingThirtythree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No, HTML is not a case sensitivity language because the HTML elements can be written in lowercase letters or in uppercase letters.
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyfour">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyfour" aria-expanded="false" aria-controls="collapseThirtyfour">
+                                34.What is the "class" attribute in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyfour" class="collapse" aria-labelledby="headingOnThirtyfour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The class attribute is used to specify the class name for an HTML element. Multiple elements in HTML can have the same class value. 
+                                Also, it is mainly used to associate the styles written in the stylesheet with the HTML elements.
+                           
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyfive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyfive" aria-expanded="false" aria-controls="collapseThirtyfive">
+                                35.Describe HTML layout structure.
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyfive" class="collapse" aria-labelledby="headingThirtyfive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Every web page has different components to display the intended content and a specific UI. But still, 
+                                there are few things which are templated and are globally accepted way to structure the web page, such as:<br><br>
+                           
+                                <b>&lt;header&gt;:</b> Stores the starting information about the web page.<br>
+                                <b>&lt;footer&gt;:</b> Represents the last section of the page.<br>
+                                <b>&lt;nav&gt;:</b> The navigation menu of the HTML page.<br>
+                                <b>&lt;article&gt;:</b> It is a set of information.<br>
+                                <b>&lt;section&gt;:</b> It is used inside the article block to define the basic structure of a page.<br>
+                                <b>&lt;aside&gt;:</b> Sidebar content of the page.<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirtysix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtysix"" aria-expanded="false" aria-controls="collapseThirtysix"">
+                                36. What are the different kinds of Doctypes available?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtysix"" class="collapse" aria-labelledby="headingThirtysix"" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The three kinds of Doctypes which are available:<br><br>
+
+                                1)Strict Doctype <br>
+                                2)Transitional Doctype<br>
+                                3)Frameset Doctype<br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyseven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyseven" aria-expanded="false" aria-controls="collapseThirtyseven">
+                                37.Explain how to indicate the character set being used by a document in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyseven" class="collapse" aria-labelledby="headingThirtyseven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The character set is defined in <mark>&lt;meta&gt;</mark> tag inside <mark>&lt;head&gt;</mark> element.<br><br>
+
+                                    <b>Ex:</b><br>
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html&gt;<br>
+                                    &lt;head&gt;<br>
+                                    &lt;meta charset="UTF-8"&gt;<br>
+                                       ...<br>
+                                       &lt;/head&gt;<br>
+                                       &lt;/html&gt;<br>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirtyeight">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyeight" aria-expanded="false" aria-controls="collapseThirtyeight">
+                                38.Explain about <head> tag?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtyeight" class="collapse" aria-labelledby="headingThirtyeight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                1) The <mark>&lt;head&gt;</mark> tag provides the information about the document. <br>
+                                    2) It should always be enclosed in the <mark>&lt;html&gt;</mark> tag. <br>
+                                    3) This tag contains the metadata about the webpage and the tags which are enclosed by head tag like <mark>&lt;link&gt;</mark>, <mark>&lt;meta&gt;</mark>,<mark>&lt;style&gt;</mark>, <mark>&lt;script&gt;</mark>, etc. 
+                                          are not displayed on the web page. <br>
+                                    4) Also, there can be only 1 <mark>&lt;head&gt;</mark> tag in the entire Html document and will always be before the <mark>&lt;body&gt;</mark> tag.
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThirtynine">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtynine" aria-expanded="false" aria-controls="collapseThirtynine">
+                                39.Explain about &lt;body&gt; tag?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThirtynine" class="collapse" aria-labelledby="headingThirtynine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                1) The <mark>&lt;body&gt;</mark> tag defines the body of the HTML document. <br>
+                                    2) It should always be enclosed in the &lt;html&gt; tag. <br>
+                                    3) All the contents which needs to be displayed on the web page like images, text, audio, video, contents, using elements like 
+                                        <mark>&lt;p&gt;</mark>, <mark>&lt;img&gt;</mark>, <mark>&lt;audio&gt;</mark>, <mark>&lt;heading&gt;</mark>, <mark>&lt;video&gt;</mark>, <mark>&lt;div&gt;</mark>, etc. will always be enclosed by the <mark>&lt;body&gt;</mark> tag. <br>
+                                    4) Also, there can be only 1 body element in an HTML document and will always be after the &lt;head&gt; tag.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFourty">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourty" aria-expanded="false" aria-controls="collapseFourty">
+                                40.What is new about the relationship between the &lt;header&gt; and &lt;h1&gt; tags in HTML5?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFourty" class="collapse" aria-labelledby="headingFourty" data-parent="#accordionExample">
+                            <div class="card-body">
+                                As HTML5 was all about better semantics and arrangements of the tags and elements,<br>1)  the <mark>&lt;header&gt;</mark> tag specifies the header section of the webpage. <br>
+                                    2) Unlike in previous version there was one <mark>&lt;h1&gt;</mark> element for the entire webpage, now this is the header for one section such as &lt;article&gt; or &lt;section&gt;. <br>
+                                    3) According to the HTML5 specification, each <mark>&lt;header&gt;</mark> element must at least have one <mark>&lt;h1&gt;</mark> tag.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfourtyone">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyOne" aria-expanded="false" aria-controls="collapsefourtyOne">
+                                41.How is Cell Padding different from Cell Spacing?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefourtyOne" class="collapse" aria-labelledby="headingfourtyOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <b>Cell Spacing:</b> Cell Spacing is the space or gap between two consecutive cells. <br>
+                                <b>Cell Padding:</b> Cell Padding is the space or gap between the text/ content of the cell and the edge/ border of the cell.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfourtytwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtytwo" aria-expanded="false" aria-controls="collapsefourtytwo">
+                                42.How can we club two or more rows or columns into a single row or column in an HTML table?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefourtytwo" class="collapse" aria-labelledby="headingfourtytwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                HTML provides two table attributes <mark>"rowspan"</mark> and <mark>"colspan"</mark> to make a cell span to multiple rows and columns respectively.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfoutythree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefoutythree" aria-expanded="false" aria-controls="collapsefoutythree">
+                                43.Is it possible to change an inline element into a block level element?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefoutythree" class="collapse" aria-labelledby="headingfoutythree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Yes, it is possible using the <mark>"display"</mark> property with its value as <mark>"block"</mark> to change the inline element into a block-level element.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfourtyfour">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyfour" aria-expanded="false" aria-controls="collapsefourtyfour">
+                                44.How to specify the link in HTML and explain the target attribute?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefourtyfour" class="collapse" aria-labelledby="headingfourtyfour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                HTML provides a hyperlink <mark>&lt;a&gt;</mark> tag to specify the links in a webpage. The <mark>'href'</mark> attribute is used to specify the link and 
+                                    the <mark>'target'</mark> attribute is used to specify, where do we want to open the linked document. <br><br>
+                                   
+                                    The <mark>'target'</mark> attribute have values like:<br><br>
+                               
+                                   1)<b>_self:</b> This is a default value. It opens the document in the same window or tab as it was clicked.<br>
+                                   2)<b>_blank:</b> It opens the document in a new window or a new tab.<br>
+                                   3)<b>_parent:</b> It opens the document in a parent frame.<br>
+                                   4)<b>_top:</b> It opens the document in a full-body window.<br>
+                               
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfourtyfive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyfive" aria-expanded="false" aria-controls="collapsefourtyfive">
+                                45.In how many ways can we specify the CSS styles for the HTML element?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefourtyfive" class="collapse" aria-labelledby="headingfourtyfive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                There are three ways in which we can specify the CSS styles for the HTML elements:<br><br>
+
+                                <b>1) Inline:</b> Here we use the 'style' attribute inside the HTML element.<br><br>
+                                    <b>Ex:</b>  &lt;body style="background-color: blue"&gt;...&lt;/body&gt;<br><br>
+                            
+                                    <b>2) Internal:</b> Here we use the &lt;style&gt; tag inside the &lt;head&gt; tag. To apply the style we bind the elements using 'id' or 'class' attributes.<br><br>
+                                    <b>Ex:</b> <br>for class="demo" before &lt;/head&gt; tag ends<br>
+                                    &lt;style&gt;<br>
+                                            .demo {<br>
+                                                 font-size : 10px;
+                                                     border : 1px black solid;<br>
+                                                 padding : 20px;<br>
+                                            }<br>
+                                            &lt;/style&gt;<br><br>
+                                            <b>3) External:</b>  Here we use the &lt;link&gt; tag inside &lt;head&gt; tag to reference the CSS file into our HTML code. 
+                                                Again the binding between elements and styles is done using 'id' or 'class' attributes.<br><br>
+                                    <b>Ex:</b><br> .external {<br>
+                                        color : red;<br>
+                                        font-size : 20px;<br>
+                                        text-align : center;<br>
+                                        padding : 50px;<br>
+                                         }<br>
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfourtysix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtysix" aria-expanded="false" aria-controls="collapsefourtysix">
+                                46.Difference between &lt;link&gt; tag and anchor tag &lt;a&gt;?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefourtysix" class="collapse" aria-labelledby="headingfourtysix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The anchor tag <mark>&lt;a&gt;</mark> is used to create a hyperlink to another webpage or to a certain part of the webpage and these links are clickable, 
+                                    where as, link tag <mark>&lt;link&gt;</mark> defines a link between a document and an external resource and these are not clickable.
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfourtyseven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyseven" aria-expanded="false" aria-controls="collapsefourtyseven">
+                                47.How to include javascript code in HTML?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefourtyseven" class="collapse" aria-labelledby="headingfourtyseven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                HTML provides a <mark>&lt;script&gt;</mark> tag using which we can run the javascript code and make our HTML page more dynamic.<br><br>
+
+                                    <b>Ex:</b><br> &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;h1&gt;&lt;span&gt;This is a demo for &lt;/span&gt;&lt;u&gt;&lt;span id="demo"&gt;&lt;/span&gt;&lt;/u&gt;&lt;/h1&gt;<br>
+                                    &lt;script&gt;<br>
+                                           document.getElementById("demo").innerHTML = "script Tag"<br>
+                                           &lt;/script&gt;<br>
+                                           &lt;/body&gt;<br>
+                                           &lt;/html&gt;<br>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfourtyeight">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyeight" aria-expanded="false" aria-controls="collapsefourtyeight">
+                                48.What is the purpose of the alt attribute on images?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefourtyeight" class="collapse" aria-labelledby="headingfourtyeight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The alt attribute provides alternative information for an image if a user cannot view it. This attribute should be used to describe any 
+                                images except those which only serve a decorative purposes, in which case it should be left empty.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfourtynine">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtynine" aria-expanded="false" aria-controls="collapsefourtynine">
+                                49.What does the "lang" attribute in html do?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefourtynine" class="collapse" aria-labelledby="headingfourtynine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <mark>"lang"</mark> attribute helps in styling pages by using them in css <mark>"lang()"</mark> pseudo class 
+                                    Spelling and grammar checkers Languade detection by search engines.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfifty">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefifty" aria-expanded="false" aria-controls="collapsefifty">
+                                50.What are data- attributes good for?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefifty" class="collapse" aria-labelledby="headingfifty" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The HTML5 data attribute lets us assign custom data to an element. When we want to store more information or data about the 
+                                element then HTML5 element or attribute exists.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfiftyone">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyone" aria-expanded="false" aria-controls="collapsefiftyone">
+                                51.Why must the ID attribute be unique on each page?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefiftyone" class="collapse" aria-labelledby="headingfiftyone" data-parent="#accordionExample">
+                            <div class="card-body">
+                                1) Each ID in your HTML document must be unique. <br>
+                                2) Using the same ID on more than one element may cause screen readers.<br>
+                                3) Other assistive technologies to only announce the first element with the shared ID, preventing users from accessing the later elements.<br>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfiftytwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftytwo" aria-expanded="false" aria-controls="collapsefiftytwo">
+                                52.When should you use section, div or article?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefiftytwo" class="collapse" aria-labelledby="headingfiftytwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <b>&lt;section&gt;:</b> It is a group of content inside is related to a single theme, and should appear as an entry in an outline of the page.
+                                    It's a chunk of related content like a subsection of a long article, a major part of the page
+                                    or a page in a webapp's tabbed interface. A section normally has a heading and maybe a footer too.<br><br>
+                               
+                                    <b>&lt;article&gt;:</b> It represents a complete or self-contained  composition in a document, page, application, or site and that is in principle, 
+                                    independently distributable or reusable, e.g. in syndication. This could be a forum post, a magazine or newspaper article, 
+                                    a blog entry, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.<br><br>
+                               
+                                    <b>&lt;div&gt;:</b> It does not convey any meaning, and it is an empty container specifying a division.
+                               
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfiftythree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftythree" aria-expanded="false" aria-controls="collapsefiftythree">
+                                53.What are some differences that XHTML has compared to HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefiftythree" class="collapse" aria-labelledby="headingfiftythree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Some of the differences are:<br><br>
+
+                                1) An XHTML element must have an XHTML &lt;DOCTYPE&gt;<br>
+                                2) Attributes values must be enclosed in quotes<br>
+                                3) Attribute minimization is forbidden (e.g. one has to use checked="checked" instead of checked)<br>
+                                4) Elements must always be properly nested<br>
+                                5) Elements must always be closed<br>
+                                6) Special characters must be escaped<br>
+
+                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfiftyfour">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyfour" aria-expanded="false" aria-controls="collapsefiftyfour">
+                                54.Convert the data into Tabular format in HTML5 by taking
+                                headings are S.no.,Language,and Mostly used for & the values of row1 are <center>1,HTML,and FrontEnd; values of row2 are 2,CSS, and FrontEnd; and values of row3 are 3,Python,BackEnd.</center>
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefiftyfour" class="collapse" aria-labelledby="headingfiftyfour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <center>
+                                <table class="tabs">
+                                    <tr style="border: 1px black solid;">	
+                                        <th style="border: 1px black solid;">S.no</th>
+                                        <th style="border: 1px black solid;">Language</th>
+                                        <th style="border: 1px black solid;">Mostly used for</th>
+                                    </tr>
+                                    <tr style="border: 1px black solid;">
+                                        <td style="border: 1px black solid;">1</td>
+                                        <td style="border: 1px black solid;">HTML</td>
+                                        <td style="border: 1px black solid;">Frontend</td>
+                                    </tr>
+                                    <tr style="border: 1px black solid;">
+                                        <td style="border: 1px black solid;">2</td>
+                                        <td style="border: 1px black solid;">CSS</td>
+                                        <td style="border: 1px black solid;">Frontend</td>
+                                    </tr>
+                                    <tr style="border: 1px black solid;">
+                                        <td style="border: 1px black solid;">3</td>
+                                        <td style="border: 1px black solid;">Python</td>
+                                        <td style="border: 1px black solid;">Backend</td>
+                                    </tr>
+                                </table>
+                                </center><hr>
+                                <b>Code:</b><br><br>
+                                    &lt;table&gt;<br>
+                                        &lt;tr&gt;<br>
+                                            &lt;th&gt;S.no&lt;/th&gt;<br>
+                                            &lt;th&gt;Language&lt;/th&gt;<br>
+                                            &lt;th&gt;Mostly used for&lt;/th&gt;<br>
+                                        &lt;/tr&gt;<br>
+                                         &lt;tr&gt;<br>
+                                            &lt;td&gt;1&lt;/td&gt;<br>
+                                            &lt;td&gt;HTML&lt;/td&gt;<br>
+                                            &lt;td&gt;Frontend&lt;/td&gt;<br>
+                                        &lt;/tr&gt;<br>
+                                        &lt;tr&gt;<br>
+                                            &lt;td&gt;2&lt;/td&gt;<br>
+                                            &lt;td&gt;CSS&lt;/td&gt;<br>
+                                            &lt;td&gt;Frontend&lt;/td&gt;<br>
+                                        &lt;/tr&gt;<br>
+                                        &lt;tr&gt;<br>
+                                            &lt;td&gt;3&lt;/td&gt;<br>
+                                            &lt;td&gt;Python&lt;/td&gt;<br>
+                                            &lt;td&gt;Backend&lt;/td&gt;<br>
+                                        &lt;/tr&gt;<br>
+                                    &lt;/table&gt;<br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfiftyfive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyfive" aria-expanded="false" aria-controls="collapsefiftyfive">
+                                55.What is an IndexedDB?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefiftyfive" class="collapse" aria-labelledby="headingfiftyfive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                IndexedDB is a way for you to persistently store data inside a user's browser. Because it lets you create web applications 
+                                with rich query abilities regardless of network availability, your applications can work both online and offline.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfiftysix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftysix" aria-expanded="false" aria-controls="collapsefiftysix">
+                                56.What is viewport?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefiftysix" class="collapse" aria-labelledby="headingfiftysix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The viewport is the user's visible area of a web page. It varies with the device, it will be smaller on a mobile phone than on a computer screen.
+                                This gives the browser instructions on how to control the page's dimensions and scaling. It is used in meta tag.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfiftyseven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyseven" aria-expanded="false" aria-controls="collapsefiftyseven">
+                                57.What is the use of comment tag?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefiftyseven" class="collapse" aria-labelledby="headingfiftyseven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
+                                You can use comments to explain your code, which can help you when you edit the source code at a later date. 
+                                This is especially useful if you have a lot of code.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfiftyeight">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyeight" aria-expanded="false" aria-controls="collapsefiftyeight">
+                                58.What is the use of &lt;area&gt; tag?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefiftyeight" class="collapse" aria-labelledby="headingfiftyeight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The <mark>&lt;area&gt;</mark> tag defines an area inside an image map.<mark>&lt;area&gt;</mark> elements are always nested inside a <mark>&lt;map&gt;</mark> tag.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfiftynine">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftynine" aria-expanded="false" aria-controls="collapsefiftynine">
+                                59.What is the use of &lt;main&gt; tag?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsefiftynine" class="collapse" aria-labelledby="headingfiftynine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The <mark>&lt;main&gt;</mark> tag specifies the main content of a document.
+
+                                The content inside the <mark>&lt;main&gt;</mark> element should be unique to the document. It should not contain any content that is repeated across 
+                                documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixty">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixty" aria-expanded="false" aria-controls="collapsesixty">
+                                60.What is the difference between &lt;meter&gt; tag and &lt;progress&gt; tag?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixty" class="collapse" aria-labelledby="headingsixty" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <mark>&lt;progress&gt;</mark> tag should be used when we want to show the completion progress of a task, whereas if we just
+                                    want a scalar measurement within a known range or fraction value. Also, we can 
+                                    specify multiple extra attributes for <mark>&lt;meter&gt;</mark> tags like 'form', 'low', 'high', 'min', etc.
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixtyOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyOne" aria-expanded="false" aria-controls="collapsesixtyOne">
+                                61.What is difference between Select and Datalist?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixtyOne" class="collapse" aria-labelledby="headingsixtyOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                For the select element, the user is required to select one of the options you've given. 
+                                For the datalist element, it is suggested that the user select one of the options you've given, but he can actually enter 
+                                anything he wants in the input.<br><br>
+                           
+                               <b>Select:</b><br>
+                                   &lt;select name="browser"&gt;<br>
+                                   &lt;option value="firefox"&gt;Firefox&lt;/option&gt;<br>
+                                   &lt;option value="ie"&gt;IE&lt;/option&gt;<br>
+                                   &lt;option value="chrome"&gt;Chrome&lt;/option&gt;<br>
+                                   &lt;option value="opera"&gt;pera&lt;/option&gt;<br>
+                                   &lt;option value="safari"&gt;Safari&lt;/option&gt;<br>
+                                   &lt;/select&gt;<br><br>
+                               
+                               <b>Datalist:</b><br>
+                               &lt;input type="text" list="browsers"&gt;<br>
+                               &lt;datalist id="browsers"&gt;<br>
+                               &lt;option value="Firefox"&gt;<br>
+                               &lt;option value="IE"&gt;<br>
+                               &lt;option value="Chrome"&gt;<br>
+                               &lt;option value="Opera"&gt;<br>
+                               &lt;option value="Safari"&gt;<br>
+                               &lt;/datalist&gt;<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixtytwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtytwo" aria-expanded="false" aria-controls="collapsesixtytwo">
+                                62.How do you change the direction of html text?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixtytwo" class="collapse" aria-labelledby="headingsixtytwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The default text direction in HTML is left-to-right. We can set text direction in HTML in one of two ways:
+                                <br><br>
+                                1)With the HTML dir attribute<br>
+                                2)With the CSS direction property
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixtythree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtythree" aria-expanded="false" aria-controls="collapsesixtythree">
+                                63.What is the difference between &lt;section&gt; and &lt;div&gt;?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixtythree" class="collapse" aria-labelledby="headingsixtythree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    1)The <mark>&lt;section&gt;</mark> tag creates independent sections within a webpage having logically connected content.<br><br>
+                                    2)And the <mark>&lt;div&gt;</mark> tag is an empty container specifying a division or a section.<br><br>
+                               
+                                    <b>&lt;section&gt; Element:</b> The &lt;section&gt; tag means that the content inside this element is grouped. 
+                                           In other words, the content relates to a single theme. It must be an entry in the outline of the page.
+                                           <br><br>
+                               
+                                   <b>Ex:</b><br>
+                               
+                                   &lt;!DOCTYPE html&gt;<br>
+                                   &lt;html&gt;<br>
+                                   &lt;head&gt;<br>
+                                   &lt;title&gt;Section Tag&lt;/title&gt;<br>
+                                   &lt;/head&gt;<br>
+                                   &lt;body&gt;<br>
+                                   &lt;section&gt;<br>
+                                   &lt;ul&gt;<br>
+                                   &lt;li&gt;Books&lt;/li&gt;<br>
+                                   &lt;li&gt;Quizzes&lt;/li&gt;<br>
+                                   &lt;li&gt;Snippets&lt;/li&gt;<br>
+                                   &lt;/ul&gt;<br>
+                                   &lt;/section&gt;<br>
+                                   &lt;/body&gt;<br>
+                                   &lt;/html&gt;<br><br>
+                                 <hr>
+                                   <b>&lt;div&gt; Element:</b> The <mark>&lt;div&gt;</mark> element only represents its child elements and doesn't have a special meaning.
+                                          It can be used with the lang, title, and class attributes to add semantics that is common to a group of 
+                                          consecutive elements. This element can also be used in a <mark>&lt;dl&gt;</mark> tag and wrap groups of <mark>&lt;dt&gt;</mark> and <mark>&lt;dd&gt;</mark> elements.<br><br>
+                               
+                                   <b>Ex:</b><br>
+                               
+                                   &lt;!DOCTYPE html&gt;<br>
+                                   &lt;html&gt;<br>
+                                   &lt;head&gt;<br>
+                                   &lt;style&gt;<br>
+                                    div {<br>
+                                    background-color: red;<br>
+                                    }<br>
+                                    &lt;/style&gt;<br>
+                                    &lt;/head&gt;<br>
+                                    &lt;body&gt;<br>
+                                    &lt;div&gt;<br>
+                                    &lt;h2&gt;A heading in a &lt;div&gt; tag.&lt;/h2&gt;<br>
+                                    &lt;p&gt;Some text in a &lt;div&gt; tag.&lt;/p&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;p&gt;Here is some other text in a &lt;p> tag.&lt;/p&gt;<br>
+                                    &lt;/body&gt;<br>
+                                    &lt;/html&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixtyfour">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyfour" aria-expanded="false" aria-controls="collapsesixtyfour">
+                                64.Define Image Map?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixtyfour" class="collapse" aria-labelledby="headingsixtyfour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                1)An image map is that you should be able to perform different actions depending on where in the image you click.<br>
+                                2)<mark>&lt;map&gt;</mark> tag defines an image map. An image map is an image with clickable areas.<br>
+                                3)The areas are defined with one or more <mark>&lt;area&gt;</mark> tags.<br><br>
+                                <b>Ex:</b><br>
+                                &lt;img  src="image_url" ,  usemap="#workspace"/&gt;<br>
+                                &lt;map  name="workspace"&gt;<br>
+                                &lt;area shape="rect"  coords="34, 44, 270, 350" ,  href="xyz.html" /&gt;<br>
+                                &lt;area shape="rect"  coords="10, 120, 250, 360" ,  href="xyz.html"/&gt;<br>
+                                &lt;/map&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixtyfive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyfive" aria-expanded="false" aria-controls="collapsesixtyfive">
+                                65.Does a hyperlink only apply to text?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixtyfive" class="collapse" aria-labelledby="headingsixtyfive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No, hyperlinks can be used both on texts and images. The HTML anchor &lt;a&gt; tag defines a hyperlink that links one page to another page. 
+                                    The "href" attribute is the most important attribute of the HTML anchor tag.
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixtysix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtysix" aria-expanded="false" aria-controls="collapsesixtysix">
+                                66.How to create a new HTML element?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixtysix" class="collapse" aria-labelledby="headingsixtysix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                We can create new elements for the document like:<br><br>
+
+                                <mark>&lt;script&gt;<br>
+                                document.createElement{"myElement"}<br>
+                                &lt;/script&gt;</mark><br><br>
+                                It can be also be used in the HTML as: &lt;myElement&gt;hello edureka!&lt;/myElement&gt;
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixtyseven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyseven" aria-expanded="false" aria-controls="collapsesixtyseven">
+                                67.What is a button tag?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixtyseven" class="collapse" aria-labelledby="headingsixtyseven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The button tag is used to create a clickable button within the HTML form on the web page. This tag creates a "submit" or "reset" button.<br><br>
+
+                                <b>Ex:</b> &lt;button name="button" type="button"&gt;Click Here&lt;/button&gt;
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixtyeight">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyeight" aria-expanded="false" aria-controls="collapsesixtyeight">
+                                68.What are logical and physical tags in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixtyeight" class="collapse" aria-labelledby="headingsixtyeight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <dl>
+                                    <dt><b>Logical tags:</b></dt> 
+                                        <dd> -- Logical tags are used to tell the meaning of the enclosed text.</dd> 
+                                        <dd><b>Example:</b> &lt;strong&gt; &lt;/strong&gt; tag. </dd>
+                                        <dd> -- When we enclose the text in the strong tag, it tells the browser that enclosed text is more important than other texts.</dd><br>
+                                
+                                    <dt><b>Physical tags:</b></dt> 
+                                        <dd>--Physical tags are used to tell the browser how to display the text enclosed in the physical tag.</dd> 
+                                        <dd><b>Examples:</b> &lt;b&gt;, &lt;big&gt;, &lt;i&gt;.</dd>
+                                </dl>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsixtynine">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtynine" aria-expanded="false" aria-controls="collapsesixtynine">
+                                69.Do all HTML tags come in a pair?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsesixtynine" class="collapse" aria-labelledby="headingsixtynine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No, there are single HTML tags that do not need a closing tag.<br> <b>Examples:</b> &lt;img&gt; tag and &lt;br&gt; tags.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventy">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventy" aria-expanded="false" aria-controls="collapseseventy">
+                                70.Do all character entities display properly on all systems?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventy" class="collapse" aria-labelledby="headingseventy" data-parent="#accordionExample">
+                            <div class="card-body">
+                                No, there are some character entities that cannot be displayed when the operating system that the browser 
+ is running on does not support the characters. When that happens, these characters are displayed as boxes.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventyOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyOne" aria-expanded="false" aria-controls="collapseseventyOne">
+                                71.Do older HTML files work on newer browsers?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventyOne" class="collapse" aria-labelledby="headingseventyOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Yes, older HTML files are compliant to the HTML standard. Most older files work on the newer browsers, though some features may not work.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventytwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventytwo" aria-expanded="false" aria-controls="collapseseventytwo">
+                                72.How do you change the number type in the middle of a list?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventytwo" class="collapse" aria-labelledby="headingseventytwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The &lt;li&gt; tag includes two attributes that are type and value. <br><br>
+                                    1)The <mark>type</mark> attribute can be used to change the numbering type for any list item. <br>
+                                    2)The <mark>value</mark> attribute can change the number index.<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventythree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventythree" aria-expanded="false" aria-controls="collapseseventythree">
+                                73.How do you create multicolored text in a webpage?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventythree" class="collapse" aria-labelledby="headingseventythree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                To create text with different colors, use the <mark>&lt;font color="color"&gt;...&lt;/font&gt;</mark> tags for every character that you want to apply color. 
+ You can use this tag combination as many times as needed, surrounding a single character or an entire word.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventyfour">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyfour" aria-expanded="false" aria-controls="collapseseventyfour">
+                                74.What are applets?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventyfour" class="collapse" aria-labelledby="headingseventyfour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Applets are small programs that can be embedded within web pages to perform some specific functionalitysuch as computations, 
+ animations and information processing. Applets are written using the Java language.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventyfive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyfive" aria-expanded="false" aria-controls="collapseseventyfive">
+                                75.What if there is no text between the tags or if a text was omitted by mistake? Will it affect the display of the HTML file?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventyfive" class="collapse" aria-labelledby="headingseventyfive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                If there is no text between the tags then there is nothing to format. Therefore no formatting will appear. Some tags, 
+ especially tags without a closing tag like the &lt;img&gt; tag, do not require any text between them.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventysix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventysix" aria-expanded="false" aria-controls="collapseseventysix">
+                                76.What are the limits of the text field size?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventysix" class="collapse" aria-labelledby="headingseventysix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The default size for a text field is around 13 characters. However, if you include the size attribute, you can set 
+ the size value to be as low as 1. The maximum size value will be determined by the browser width.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventyseven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyseven" aria-expanded="false" aria-controls="collapseseventyseven">
+                                77.Do &lt;th&gt; tags always need to come at the start of a row or column?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventyseven" class="collapse" aria-labelledby="headingseventyseven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <mark>&lt;th&gt;</mark> tags are mainly used for headings. Any <mark>&lt;tr&gt;</mark> tag can be changed to a <mark>&lt;th&gt;</mark> tag. This causes the text contained within the 
+                                    <mark>&lt;th&gt;</mark> tag to be displayed as bold in the browser.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventyeight">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyeight" aria-expanded="false" aria-controls="collapseseventyeight">
+                                78.Do you know which are two semantic tags are included in HTML5 version?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventyeight" class="collapse" aria-labelledby="headingseventyeight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The &lt;article&gt; and &lt;section&gt; tags are two new tags that are included in HTML5. Articles can be composed of multiple sections that 
+                                    can have multiple articles. An article tag represents a full block of content which is a section of a bigger whole.
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingseventynine">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventynine" aria-expanded="false" aria-controls="collapseseventynine">
+                                79.Can you tell me two benefits of HTML5 Web Storage?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseseventynine" class="collapse" aria-labelledby="headingseventynine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Two main benefits of HTML5 Web Storage are:<br>
+
+                                1)It can store up to 10 MB data which is more than cookies have.<br>
+                                2)Web storage data cannot be transferred with the HTTP request. It helps to increase the performance of the application.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeighty">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeighty" aria-expanded="false" aria-controls="collapseeighty">
+                                80.How are tags migrated from HTML4 to HTML5?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeighty" class="collapse" aria-labelledby="headingeighty" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <b>In HTML4 :</b> <br><br>
+                                    1) &lt;div id="header"&gt;<br>
+                                    2) &lt;div id="menu"&gt;<br>
+                                    3) &lt;div id="content"&gt;<br>
+                                    4) &lt;div id="post"&gt;<br>
+                                    5) &lt;div id="footer&gt;<br><br>
+                                <b>In HTML5 :</b><br><br>
+                                    1) &lt;header&gt;<br>
+                                    2) &lt;nav&gt;<br>
+                                    3) &lt;section&gt;<br>
+                                    4) &lt;article&gt;<br>
+                                    5) &lt;footer&gt;<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeightyOne">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyOne" aria-expanded="false" aria-controls="collapseeightyOne">
+                                81.What are two types of Web Storage in HTML5?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeightyOne" class="collapse" aria-labelledby="headingeightyOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Two storage types of HTML5 are:<br><br>
+                                1) <b>Session Storage:</b> It stores data of current session only. It means that the data stored in session storage, clear automatically when the browser is closed.<br><br>
+
+                                2) <b>Local Storage:</b> Local storage is another type of HTML5 Web Storage. In local storage, data is not deleted automatically when the current browser window is closed.<br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeightytwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightytwo" aria-expanded="false" aria-controls="collapseeightytwo">
+                                82.What is &lt;figure&gt; in HTML5?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeightytwo" class="collapse" aria-labelledby="headingeightytwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The <mark>&lt;figure&gt;</mark> tag represents a piece of self-contained flow content. It is mostly used as a single unit as a reference the main flow of 
+                                the document.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeeightythree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightythree" aria-expanded="false" aria-controls="collapseeightythree">
+                                83.How can you open an URL into a new tab when clicked?                                                                
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeightythree" class="collapse" aria-labelledby="headingeightythree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                To open an URL into a new tab in the browser upon a click, we need to add target attribute equal to <mark>_blank</mark>.<br><br>
+
+                                <b>Ex:</b> &lt;a href="#" target="_blank"&gt;...&lt;/a&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeightyfour">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyfour" aria-expanded="false" aria-controls="collapseeightyfour">
+                                84.In how many way hyperlinks can be displayed?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeightyfour" class="collapse" aria-labelledby="headingeightyfour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Hyperlinks can be displayed in 3 ways:<br><br>
+
+                                1) <b>Unvisited Link :</b> These links are blue in color and underlined.<br>
+                                2) <b>Visited Link :</b> These links are purple in color and underlined.<br>
+                                3) <b>Active Link :</b> These links are red in color and underlined.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeightyfive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyfive" aria-expanded="false" aria-controls="collapseeightyfive">
+                                85.Differentiate between an Ordered list and an Unordered list?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeightyfive" class="collapse" aria-labelledby="headingeightyfive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <b>Unordered list:</b> An unordered list uses <mark>&lt;ul&gt;...&lt;/ul&gt;</mark> tags and each element of the list is written between &lt;li&gt; &lt;/li&gt; tags. The list items are 
+                                        displayed as bullets rather than numbers.<br><br>
+
+                                    <b>Ordered list:</b> An ordered list uses <mark>&lt;ol&gt;...&lt;/ol&gt;</mark> tags and each element of the list is written between &lt;li&gt; &lt;/li&gt; tags. The list items are 
+                                    displayed as numbers rather than bullet points.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeightysix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightysix" aria-expanded="false" aria-controls="collapseeightysix">
+                                86.How many types of headings in HTML?
+
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeightysix" class="collapse" aria-labelledby="headingeightysix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                There are six types of heading tags in HTML which are defined with the <mark>&lt;h1&gt;</mark> to <mark>&lt;h6&gt;</mark> tags. Each type of heading tag displays a 
+                                    different text size from another. <mark>&lt;h1&gt;</mark> is the largest heading tag and <mark>&lt;h6&gt;</mark> is the smallest.<br><br>
+                                    
+                                   <b>Ex:</b><br><br> &lt;html&gt;<br>
+                                   &lt;body&gt;<br>
+                                   &lt;h1&gt;This is Heading 1&lt;/h1&gt;<br>
+                                   &lt;h2&gt;This is Heading 2&lt;/h2&gt;<br>
+                                   &lt;h3&gt;This is Heading 3&lt;/h3&gt;<br>
+                                   &lt;h4&gt;This is Heading 4&lt;/h4&gt;<br>
+                                   &lt;h5&gt;This is Heading 5&lt;/h5&gt;<br>
+                                   &lt;h6&gt;This is Heading 6&lt;/h6&gt;<br>
+                               
+                                   &lt;/body&gt;
+                                   &lt;/html&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeightyseven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyseven" aria-expanded="false" aria-controls="collapseeightyseven">
+                                87.How to select multiple options from a drop down list in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeightyseven" class="collapse" aria-labelledby="headingeightyseven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                &lt;label for="Fruit"&gt;Choose a Fruit:&lt;/label&gt;<br>
+                                &lt;select name="Fruit" id="Fruit"&gt;<br>
+                                &lt;option value="Mango">Mango&lt;/option&gt;<br>
+                                &lt;option value="Lichhi">Licchi&lt;/option&gt;<br>
+                                &lt;/select&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeightyeight">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyeight" aria-expanded="false" aria-controls="collapseeightyeight">
+                                88.How to underline the text in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeightyeight" class="collapse" aria-labelledby="headingeightyeight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <mark>&lt;u&gt;</mark> tag is used for underline the text. The <mark>&lt;u&gt;</mark> tag was deprecated in HTML, but then they re-introduced in HTML5.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeightynine">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightynine" aria-expanded="false" aria-controls="collapseeightynine">
+                                89.How to create a box in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseeightynine" class="collapse" aria-labelledby="headingeightynine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                We can create a box in two ways:<br><br>
+
+                                <b>1)</b> &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+                                &lt;style&gt;<br>
+                                            .square {<br>
+                                                height: 50px;<br>
+                                                width: 50px;<br>
+                                                background-color: #555;<br>
+                                            }<br>
+                                            &lt;/style&gt;<br>
+                                            &lt;/head&gt;<br>
+                                            &lt;body&gt;<br>
+                                            &lt;h2&gt;Draw Square using CSS&lt;/h2&gt;<br>
+                                            &lt;div class="square"&gt;&lt;/div&gt;<br>
+                                            &lt;/body&gt;<br>
+                                            &lt;/html&gt;<br><br>
+
+                                <b>2)</b> &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;style&gt;<br>
+                                            div {<br>
+                                                background-color: lightgrey;<br>
+                                                width: 300px;<br>
+                                                border: 15px solid green;<br>
+                                                padding: 50px;<br>
+                                                margin: 20px;<br>
+                                            }<br>
+                                            &lt;/style&gt;<br>
+                                            &lt;/head&gt;<br>
+                                            &lt;body&gt;<br>
+                                            &lt;p&gt;BOX&lt;/p&gt;<br>
+                                            &lt;div&gt;Guvi is taken a great initiative where they are offering courses on frontend as well as backend which is so usefull for students.&lt;/div&gt;<br>
+                                            &lt;/body&gt;<br>
+                                            &lt;/html&gt;<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingeninty">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseninty" aria-expanded="false" aria-controls="collapseninty">
+                                90.How to add video in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseninty" class="collapse" aria-labelledby="headingninty" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The HTML <mark>&lt;video&gt;</mark> element is used to show a video on a web page.<br>
+
+                                    <b>Ex:</b><br> &lt;video width="320" height="240" controls&gt;<br>
+                                    &lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                                    &lt;source src="movie.ogg" type="video/ogg"&gt;<br>
+                                    &lt;/video&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingnintyone">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyone" aria-expanded="false" aria-controls="collapsenintyone">
+                                91.How to create a popup in html with CSS?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsenintyone" class="collapse" aria-labelledby="headingnintyone" data-parent="#accordionExample">
+                            <div class="card-body">
+                                &lt;div class="popup" onclick="myFunction()"&gt;Click me!<br>
+                                &lt;span class="popuptext" id="NewPopup"&gt;Your text&lt;/span&gt;<br>
+                                &lt;/div&gt;
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingnintytwo">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintytwo" aria-expanded="false" aria-controls="collapsenintytwo">
+                                92.What is the difference between XHTMLand HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsenintytwo" class="collapse" aria-labelledby="headingnintytwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                
+                                    <table class="tabs">
+                                        <tr style="border: 1px black solid;">	
+                                            <th style="border: 1px black solid;">S.no</th>
+                                            <th style="border: 1px black solid;">HTML</th>
+                                            <th style="border: 1px black solid;">XHTML</th>
+                                        </tr>
+                                        <tr style="border: 1px black solid;">
+                                            <td style="border: 1px black solid;">1</td>
+                                            <td style="border: 1px black solid;">HTML stands for Hypertext Markup Language.</td>
+                                            <td style="border: 1px black solid;">XHTML stands for Extensible Hypertext Markup Language.</td>
+                                        </tr>
+                                        <tr style="border: 1px black solid;">
+                                            <td style="border: 1px black solid;">2</td>
+                                            <td style="border: 1px black solid;">It was developed by Tim Berners-Lee.</td>
+                                            <td style="border: 1px black solid;">It was developed by W3C i.e World Wide Web Consortium.</td>
+                                        </tr>
+                                        <tr style="border: 1px black solid;">
+                                            <td style="border: 1px black solid;">3</td>
+                                            <td style="border: 1px black solid;">It was developed in 1991.</td>
+                                            <td style="border: 1px black solid;">It was released in 2000.</td>
+                                        </tr>
+                                        <tr style="border: 1px black solid;">
+                                            <td style="border: 1px black solid;">4</td>
+                                            <td style="border: 1px black solid;">It is extended from SGML.</td>
+                                            <td style="border: 1px black solid;">It is extended from XML and HTML.</td>
+                                        </tr>
+                                        <tr style="border: 1px black solid;">
+                                            <td style="border: 1px black solid;">5</td>
+                                            <td style="border: 1px black solid;">It is extended from XML and HTML.</td>
+                                            <td style="border: 1px black solid;">It is necessary to close the tags in the order they are opened.</td>
+                                        </tr>
+                                        <tr style="border: 1px black solid;">
+                                            <td style="border: 1px black solid;">6</td>
+                                            <td style="border: 1px black solid;">It is necessary to close the tags in the order they are opened.</td>
+                                            <td style="border: 1px black solid;">In this, every tag and attribute should be in lower case.</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingnintythree">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintythree" aria-expanded="false" aria-controls="collapsenintythree">
+                                93.How to give space in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsenintythree" class="collapse" aria-labelledby="headingnintythree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                1) In order to add a space in the webpage, Go  where you want to add the space and then use the spacebar. Normally, HTML displays one space between words, no matter how many times you have entered  the space bar. 
+                                    <br>
+                                2) Now if you type <mark> & nbsp; </mark> to force an extra space. <br>
+
+                                3) This is known as a non-breaking space because it helps to prevent a line break at its location.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingnintyfour">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyfour" aria-expanded="false" aria-controls="collapsenintyfour">
+                                94. What is DOM in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsenintyfour" class="collapse" aria-labelledby="headingnintyfour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                DOM stands for Document Object Model. When a web page is getting loaded that time the browser creates a Document Object Model of the page and it is constructed as a tree of Objects. HTML DOM is basically an Object Model for HTML.<br><br>
+                                HTML DOM describes:<br><br>
+                                <ul>
+                                    <li>The HTML elements as objects</li>
+                                    <li>Properties of all HTML elements</li>
+                                    <li>Methods of all HTML elements</li>
+                                    <li>Events of all HTML elements</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingnintyfive">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyfive" aria-expanded="false" aria-controls="collapsenintyfive">
+                                95.How to add favicon in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsenintyfive" class="collapse" aria-labelledby="headingnintyfive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                &lt;link rel="icon" type="image/png" href="/favicon.png"/&gt;<br>
+                                &lt;link rel="icon" type="image/png" href="https://example.com/favicon.png"/&gt;
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingnintysix">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintysix" aria-expanded="false" aria-controls="collapsenintysix">
+                                96.How can you keep list elements straight in an HTML file?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsenintysix" class="collapse" aria-labelledby="headingnintysix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                We can use indents to keep the elements of a list aligned straight. We can use a nested list and indent them further than the parent list, we can quickly determine the lists and elements contained under the list.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingnintyseven">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyseven" aria-expanded="false" aria-controls="collapsenintyseven">
+                                97.What are the entities in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsenintyseven" class="collapse" aria-labelledby="headingnintyseven" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The HTML character entities are used as a replacement for reserved characters in HTML. You can also replace characters that are not present on your keyboard by entities. These characters are replaced because some characters are reserved in HTML.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingnintyeight">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyeight" aria-expanded="false" aria-controls="collapsenintyeight">
+                                98.Why is a URL encoded in HTML?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsenintyeight" class="collapse" aria-labelledby="headingnintyeight" data-parent="#accordionExample">
+                            <div class="card-body">
+                                An URL is encoded to convert non-ASCII characters into a format that can be used over the Internet because a URL is sent over the Internet by using the ASCII character-set only. If a URL contains characters outside the ASCII set, the URL has to be converted. The non-ASCII characters are replaced with a "%" followed by hexadecimal digits.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingnintynine">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintynine" aria-expanded="false" aria-controls="collapsenintynine">
+                                99.What is the use of figcaption tag in HTML 5?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapsenintynine" class="collapse" aria-labelledby="headingnintynine" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The <mark>&lt;figcaption&gt;</mark> element is used to provide a caption to an image. It is an optional tag and can appear before or after the content within the <mark>&lt;figure&gt;</mark> tag. 
+                                The <mark>&lt;figcaption&gt;</mark> element is used with &lt;figure&gt; element and it can be placed as the first or last child of the &lt;figure&gt; element.
+                                <br><br>
+                                <b>Ex:</b><br><br>
+                                &lt;figure&gt; <br>
+                                &lt;img src="img.jpg" alt="html"/&gt;  <br>
+                                &lt;figcaption>HTML is used for frontend.&lt;/figcaption&gt;  <br> 
+                                &lt;/figure&gt;<br>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingHundred">
+                            <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseHundred" aria-expanded="false" aria-controls="collapseHundred">
+                                100.What is the relationship between the border and rule attributes?
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseHundred" class="collapse" aria-labelledby="headingHundred" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Default cell borders, with a thickness of 1 pixel, are automatically added between cells if the border attribute is set to a nonzero value. Likewise, If the border attribute is not included, a default 1-pxs border appears if the rules attribute is added to the 
+                                <mark>&lt;table&gt;</mark> tag.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

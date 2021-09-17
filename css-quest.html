@@ -1,0 +1,2192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="stle.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="">HTML Questions <span class="sr-only">(current)</span></a>
+            </li>
+           
+            <li class="nav-item active">
+              <a class="nav-link" href="/css-quest.html" >CSS Questions</a>
+            </li>
+        
+          </ul>
+        </div>
+      </nav>
+    <h1>Interview Questions on CSS</h1>
+        <div class="container">
+            <div class="column">
+                <div class="row-md-6 text-center m-3"><img src="assets/image.png" alt="no img" ></div>
+                <div class="row-md-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    1.What is CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    CSS stands for Cascading Style Sheets allows you to create great-looking web pages 
+                                    It is a language for specifying how documents are presented to users — how they are styled, laid out, etc.<br>  
+                                    i) CSS can be used for very basic document text styling — for example changing the color and size of headings and links.<br> 
+                                    ii) It can be used to create layout — for example turning a single column of text into a layout with a main content area and a sidebar for related information.<br> 
+                                    iii) It can even be used for effects such as animation.
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    2. What are the benifits of using CSS?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Benifits of CSS are:<br><br>
+
+                                    <b>1) Separation of content from presentation -</b> CSS provides a way to present the same content in multiple presentation formats in mobile or desktop or laptop.<br>
+                                    <b>2) Easy to maintain -</b> CSS, built effectively can be used to change the look and feel complete by making small changes. To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.<br>
+                                    <b>3) Bandwidth -</b> Used effectively, the style sheets will be stored in the browser cache and they can be used on multiple pages, without having to download again.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    3.How to include CSS in the webpage?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    There are 3 different ways to include CSS in webpage:<br><br>
+                                    <b>1) Inline:</b> Here we use the 'style' attribute to add inline styles to HTML elements(CSS rules applied directly within an HTML tag).Style can be added directly to the HTML element using a style tag.<br><br>
+                                        <b>Ex:</b>  &lt;body style="background-color: blue"&gt;...&lt;/body&gt;<br><br>
+                                
+                                        <b>2) Internal:</b> Here we use the &lt;style&gt; tag. A set of CSS styles included within HTML page.<br><br>
+                                        <b>Ex:</b> <br>for class="demo" before &lt;/head&gt; tag ends<br>
+                                        &lt;style&gt;<br>
+                                                .demo {<br>
+                                                     font-size : 10px;
+                                                         border : 1px black solid;<br>
+                                                     padding : 20px;<br>
+                                                }<br>
+                                                &lt;/style&gt;<br><br>
+                                                <b>3) External:</b>  Here we use the &lt;link&gt; tag . Using link tag, we can link the style sheet to the HTML page.<br><br>
+                                        <b>Ex:</b><br> .external {<br>
+                                            color : red;<br>
+                                            font-size : 20px;<br>
+                                            text-align : center;<br>
+                                            padding : 50px;<br>
+                                             }<br><br>
+                                             <b>4) Import:</b>  Import a stylesheet file (an external file imported into another CSS file). Another way to add CSS is by using the @import rule. This is to add a new CSS file within CSS itself.<br><br>
+                                             <b>Ex:</b><br> @import "path/to/style.css";
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    4.What does the cascading portion of CSS mean?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The cascading in CSS refers to the fact that styling rules "cascade" down from several sources. This means that CSS has an inherent hierarchy and styles of a higher precedence will overwrite rules of a lower precedence.<br>
+
+                                    ->Even the simplest HTML document may have three or more style sheets associated with it including:<br><br>
+                                    1) The browser's style sheet<br>           
+                                    2) The user's style sheet<br>
+                                    3) The author's style sheet<br>
+                                </div>
+                            </div>
+                            </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    5.What is Property?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The style that you are applying to a selector,<br><b>Ex: </b> border.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    6.What is a Selector?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    A CSS selector is the first part of a CSS Ruleset that actually selects the content you want to style
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingSeven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    7.What are the different types of Selectors in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>Universal Selector:</b> The universal selector works like a wildcard character, selecting all elements on a page.<br>
+                                    <b>Ex:</b><br> * {<br>
+                                          color: "green";<br>
+                                          font-size: 20px;<br>
+                                          line-height: 25px;<br>
+                                          }<br><br>
+                                          <b>Element Type Selector:</b> This selector matches one or more HTML elements of the same name.<br> 
+                                            <b>Ex:</b><br>ul {<br>
+                                          line-style: none;<br>
+                                          border: solid 1px #ccc;<br>
+                                          }<br><br>
+                                          <b>ID Selector:</b> This selector matches any HTML element that has an ID attribute with the same value as that of the selector.<br> 
+                                            <b>Ex:</b> <br>#container {<br>
+                                          width: 960px;<br>
+                                          margin: 0 auto;<br>
+                                        }<br>
+                                
+                                        &lt;div id="container"&gt;&lt;/div&gt;<br><br>
+                                        <b>Class Selector:</b> The class selector also matches all elements on the page that have their class attribute set to the same value as the class.<br> 
+                                            <b>Ex:</b> <br>.box {<br>
+                                          padding: 10px;<br>
+                                          margin: 10px;<br>
+                                          width: 240px;<br>
+                                        }<br>
+                                
+                                        &lt;div class="box"&gt;&lt;/div&gt;<br>
+                                        <b>Attribute Selector:</b> The attribute selector targets elements based on the presence and/or value of HTML attributes, and is declared using square brackets.<br>
+                                            <b>Ex:</b> <br>input [type=”text”] {<br>
+                                        background-color: #444;<br>
+                                        width: 200px;<br>
+                                        }<br>
+                                
+                                        &lt;input type="text"&gt;<br>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingEight">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    8.What are Pseudo-classes and give example?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>Pseudo-Classes:</b> A pseudo-class uses a colon character to identify a pseudo-state that an element might be in.<br><br>
+	                                <b>Ex:</b><br> a:hover {<br>
+   		                            color: red;<br>
+		                                }
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingNine">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    9.What are Pseudo-elements and explain it with example?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                   <b> Pseudo-element:</b> A CSS pseudo-element is used to style specified parts of an element.<br>
+                                    i) Style the first letter, or line, of an element<br>
+                                       ii) Insert content before, or after, the content of an element<br>
+                                <b>Ex:</b><br> p::first-line {<br>
+                                        color: #ff0000;<br>
+                                        font-variant: small-caps;<br>
+                                          }<br><br>
+                            
+                                          p::first-letter {<br>
+                                        color: #ff0000;<br>
+                                        font-size: xx-large;<br>
+                                        }<br><br>
+                            
+                                        h1::before {<br>
+                                        content: url(smiley.gif);<br>
+                                        }<br><br>
+                            
+                                        h1::after {<br>
+                                        content: url(smiley.gif);<br>
+                                        }<br><br>
+                            
+                                        ::selection {<br>
+                                        color: red;<br>
+                                        background: yellow;<br>
+                                        }<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTen">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    10.What are Combinators?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The selection of an element based on its occurrence in relation to another element like whitespace, >, +, or ~.<br><br>
+     
+                                    <b>Descendant Combinator:</b> The descendant selector or, more accurately, the descendant combinator lets you combine two or more selectors so you can be more specific in your selection method.<br>
+                                   <b>Ex:</b><br> #container .box {<br>
+                                       float: left;<br>
+                                       padding-bottom: 15px;<br>
+                                       } <br><br>
+                               
+                                       &lt;div id="container"&gt;<br>
+                                       &lt;div class="box"&gt;&lt;/div&gt;<br>
+                                       &lt;div class="box-2"&gt;&lt;/div&gt;<br>
+                                       &lt;/div&gt;<br>
+                                       &lt;div class=”box”&gt;&lt;/div&gt;<br><br>
+                                   <b>Child Combinator:</b> A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except it only targets immediate child elements.
+                                   <br><b>Ex:</b> #container> .box {<br>
+                                       float: left;<br>
+                                       padding-bottom: 15px;<br>
+                                       }<br>	
+                                       &lt;div id="container"&gt;<br>
+                                       &lt;div class="box"&gt;&lt;/div&gt;<br>
+                                       &lt;div&gt;<br>
+                                       &lt;div class="box"&gt;&lt;/div&gt;<br>
+                                       &lt;/div&gt;<br>
+                                       &lt;/div&gt;<br><br>
+                                   <b>General Sibling Combinator:</b> A selector that uses a general sibling combinator to match elements based on sibling relationships. The selected elements are beside each other in the HTML.
+                                   <br><b>Ex:</b> h2 ~ p {<br>
+                                       margin-bottom: 20px;<br>
+                                       }<br><br>
+                               
+                                       &lt;h2&gt;Title&lt;/h2><br>
+                                       &lt;p>Paragraph example.&lt;/p><br>
+                                       &lt;p>Paragraph example.&lt;/p><br>
+                                       &lt;p>Paragraph example.&lt;/p><br>
+                                       &lt;div class=”box”><br>
+                                       &lt;p>Paragraph example.&lt;/p><br>
+                                   &lt;/div><br><br>
+                                  <b> Adjacent Sibling Combinator:</b> A selector that uses the adjacent sibling combinator uses the plus symbol (+), and is almost the same as the general sibling selector. The difference is that the targeted element must be an immediate sibling, not just a general sibling.
+                                  <br><b>Ex:</b> p + p {<br>
+                                       text-indent: 1.Sem;<br>
+                                       margin-bottom: 0;<br>
+                                       }<br><br>
+                               
+                                       &lt;h2>Title&lt;/h2><br>
+                                       &lt;p>Paragraph example.&lt;/p><br>
+                                       &lt;p>Paragraph example.&lt;/p><br>
+                                       &lt;div class=”box”><br>
+                                       &lt;p>Paragraph example.&lt;/p><br>
+                                       &lt;p>Paragraph example.&lt;/p><br>
+                                       &lt;/div><br>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingEleven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                    11.What are the different position states in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    There are 4 position states in CSS:<br>
+	                                    1) Absolute<br>
+	                                    2) Relative<br>
+	                                    3) Fixed<br>
+	                                    4) Static<br>
+   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwelve">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                    12.How the position states are differ from each other and explain them?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>1) Absolute:</b>  Place an element exactly where you want to place it. absolute position is actually set relative to the 
+                                    element's parent.<br> if no parent available then relatively place to the page itself.<br><br>
+                                    <b>2)Relative:</b> It is used to set position an element relative to itself (from where the element would be placed, if u don't apply 
+                                    relative positioning).<br> <b>Ex:</b> if u set position relative to an element and set top: 10px, it will move 10px down from where it would be normally.<br><br>
+                                    
+                                    <b>3)Fixed:</b> Element is positioned relative to viewport or the browser window itself. viewport doesn't changed if 
+                                    you scroll and hence fixed element will stay right in the same position.<br><br>
+                                    
+                                    <b>4)Static:</b> Element will be positioned based on the normal flow of the document. usually, u will use position 
+                                    static to remove other position might be applied to an element.
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirteen">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                    13.What does * { box-sizing: border-box; } do? What are its advantages?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    By default, elements have box-sizing: content-box applied, and only the content size is being accounted for.<br><br>
+                                    <b>box-sizing:border-box</b> changes how the width and height of elements are being calculated, border and padding are also being included in the calculation.<br><br>
+                                   i) The height of an element is now calculated by the content's height + vertical padding + vertical border width.<br><br>
+                                   ii) The width of an element is now calculated by the content's width + horizontal padding + horizontal border width.<br><br>
+                                   iii) Taking into account paddings and borders as part of our box model resonates better with how designers actually imagine content in grids.
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFourteen">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                    14.What is the difference between Pseudo-classes and pseudo-elements?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    A pseudo-class is a selector that assists in the selection of something that cannot be expressed by a 
+                                    simple selector, for example :hover. A pseudo-element however allows us to create items that do not normally 
+                                    exist in the document tree, for example ::after.<br><br>
+                                
+                                    <b>1) Pseudo-classes:</b> Pseudo-classes select regular elements but under certain conditions, like when their 
+                                       position relative to siblings or when they’re under a particular state.<br><br>
+                                
+                                    a) Dynamic pseudo-classes<br>
+                                        :link<br>
+                                        :visited<br>
+                                        :hover<br>
+                                        :active<br>
+                                        :focus<br><br>
+                                    
+                                    b) UI element states pseudo-classes<br>
+                                
+                                        :enabled<br>
+                                        :disabled<br>
+                                        :checked<br><br>
+                                
+                                    c) Structural pseudo-classes<br>
+                                        :first-child<br>
+                                        :nth-child(n)<br>
+                                        :nth-last-child(n)<br>
+                                        :nth-of-type(n)<br>
+                                        :nth-last-of-type(n)<br>
+                                        :last-child<br>
+                                        :first-of-type<br>
+                                        :last-of-type<br>
+                                        :only-child<br>
+                                        :only-of-type<br>
+                                        :root<br>
+                                        :empty<br><br>
+                                
+                                   <b>2) Pseudo-elements:</b> Pseudo-elements effectively create new elements that are not specified in the markup 
+                                      of the document and can be manipulated much like a regular element.<br><br>
+                                
+                                    ::before<br>
+                                    ::after<br>
+                                    ::first-letter<br>
+                                    ::first-line<br>
+                                    ::selection<br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFifteen">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                    15.Why background and color are the separate properties if they should always be set together?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFifteen" class="collapse" aria-labelledby="headingFifteen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Color is an inherited property while background is not. So this can make confusion further.  
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSixteen">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                                    16.What is the difference between classes and IDs in CSS?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>IDs</b> — Meant to be unique within the document. Can be used to identify an element when linking using a fragment identifier. Elements can only have one id attribute.<br><br>
+
+                                    <b>Classes</b> — Can be reused on multiple elements within the document. Mainly for styling and targeting elements.
+
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSeventeen">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                                    17.What is the difference between inline, inline-block, and block?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <b>Block Element:</b> The block elements always start on a new line. They will also take space for an entire row or width. List of block elements are &lt;div>, &lt;p>.<br><br>
+ 
+                                  <b>Inline Elements:</b> Inline elements don't start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements are &lt;a>, &lt;span> , &lt;strong>, and &lt;img> tags. <br><br>
+                                   
+                                  <b>Inline Block Elements:</b> Inline-block elements are similar to inline elements, except they can have padding and margins added on all four sides.
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingEighteen">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                                   18.Does margin-top or margin-bottom have an effect on inline elements?
+  
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    No, it doesn’t affect the inline elements. Inline elements flow with the contents of the page.
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingNinteen">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNinteen" aria-expanded="false" aria-controls="collapseNinteen">
+				                    19.Differentiate Box Sizing Property?
+                                    
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseNinteen" class="collapse" aria-labelledby="headingNinteen" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The box-sizing CSS property sets how the total width and height of an element are calculated.<br><br>
+
+                                    <b>Content-box:</b> The default width and height values apply to the element's content only. The padding and border are added to the outside of the box.<br><br>
+                                
+                                    <b>Padding-box:</b> Width and height values apply to the element's content and its padding. The border is added to the outside of the box. Currently, only Firefox supports the padding-box value.<br><br>
+                                
+                                    <b>Border-box:</b> Width and height values apply to the content, padding, and border.
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwenty">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                                    20.What is the grid system?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    CSS Grid Layout is the most powerful layout system available in CSS. It is said to be a 2-dimensional system,<br> 
+                                    meaning it can handle both columns and rows, unlike flexbox which is largely a 1-dimensional system.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentyOne">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
+                                    21.What are the different ways to hide the element using CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwentyOne" class="collapse" aria-labelledby="headingTwentyOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                 <b>Display property(display: none):</b> It’s not available for screen readers. The element will not exist in the DOM if display: none is used.<br><br>
+
+                                    <b>Visibility property(visibility: hidden):</b> will take up the space of the element. It will be available to screen reader users. The element will actually be present in the DOM, but not shown on the screen.<br><br>
+                               
+                                   <b> Position property (position: absolute):</b> Make it available outside the screen.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentytwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">
+                                    22.What is flexbox?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwentytwo" class="collapse" aria-labelledby="headingTwentytwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Flexbox is a one-dimensional layout method for laying out items in rows or columns. Items flex to fill additional space and shrink to fit into smaller spaces.<br><br>
+                                    <b>Ex :-</b> <br>
+                                    &lt;!DOCTYPE html><br>
+                                    &lt;html><br>
+                                    &lt;head><br><br>
+                             
+                                    &lt;style><br>
+                             .flex-container {<br>
+                               display: flex;<br>
+                               background-color: #f4b042;<br>
+                             }<br><br>
+                             
+                             .flex-container > div {<br>
+                               background-color: #d60a33;<br>
+                               margin: 10px;<br>
+                               padding: 20px;<br>
+                               font-size: 30px;<br>
+                             }<br><br>
+                             
+                             &lt;/style><br>
+                             &lt;/head><br><br>
+                             
+                             &lt;body><br>
+                             &lt;div class="flex-container"><br>
+                             &lt;div>1&lt;/div><br>
+                             &lt;div>2&lt;/div><br>
+                             &lt;div>3&lt;/div> <br>
+                             &lt;/div><br>
+                             &lt;p> Example of  &lt;em>flex&lt;/em>box.&lt;/p><br>
+                             &lt;/body><br>
+                             &lt;/html>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentythree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentythree" aria-expanded="false" aria-controls="collapseTwentythree">
+                                    23.Difference between CSS grid vs flexbox?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwentythree" class="collapse" aria-labelledby="headingTwentythree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>CSS Grid Layout</b> is a two-dimensional system, meaning it can handle both columns and rows. Grid layout is intended for larger-scale layouts which aren’t linear in design.<br><br>
+
+                                    <b>CSS Flexbox</b> is largely a one-dimensional system (either in a column or a row). Flexbox layout is most appropriate to the components of an application.
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentyfour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyfour" aria-expanded="false" aria-controls="collapseTwentyfour">
+                                    24.What does important mean in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwentyfour" class="collapse" aria-labelledby="headingTwentyfour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The style is having the important will have the highest precedence and it overrides the cascaded property.<br><br>
+                                    <b>Ex:</b> <br>
+                                         p {<br>
+                                             color: red !important;<br>
+                                           }<br>
+                                        #thing {<br>
+                                             color: green;<br>
+                                           }<br><br>
+                                 
+                                           &lt;p id="thing">Will be RED.&lt;/p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentyfive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyfive" aria-expanded="false" aria-controls="collapseTwentyfive">
+                                    25.Can you name the four types of @media properties?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwentyfive" class="collapse" aria-labelledby="headingTwentyfive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>All</b> → It’s the default property. Used for all media-type devices.<br>
+                                    <b>Screen</b> → Used for computer screen, mobile screen.<br>
+                                    <b>Print</b> → Used for printers.<br>
+                                    <b>Speech</b> → Used for screen readers.<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentysix">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentysix" aria-expanded="false" aria-controls="collapseTwentysix">
+                                    26.Why background and color are the separate properties if they should always be set together?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwentysix" class="collapse" aria-labelledby="headingTwentysix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    There are two reasons behind this:<br><br>
+
+                                    1) It enhances the legibility of style sheets. The background property is a complex property in CSS, and if it is combined with color, the complexity will further increase.<br>
+                                    2) Color is an inherited property while the background is not. So this can make confusion further.
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentyseven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyseven" aria-expanded="false" aria-controls="collapseTwentyseven">
+                                    27.What is Embedded Style Sheet?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwentyseven" class="collapse" aria-labelledby="headingTwentyseven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    An Embedded style sheet is a CSS style specification method used with HTML. You can embed the entire stylesheet in an HTML document by using the STYLE element.<br><br>
+                                    <b>Ex:</b><br><br>
+                                    &lt;style>  <br>  
+                                        body {    <br>
+                                                background-color: linen;<br>    
+                                        }    <br><br>
+                                        h1 {    <br>
+                                                color: red;<br>    
+                                                margin-left: 80px;<br>    
+                                        }     <br>
+                                        &lt;/style> 
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentyeight">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyeight" aria-expanded="false" aria-controls="collapseTwentyeight">
+                                    28.What are the advantages of External Style Sheets?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwentyeight" class="collapse" aria-labelledby="headingTwentyeight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    1) You can create classes for reusing it in many documents.<br>
+                                    2) By using it, you can control the styles of multiple documents from one file.<br>
+                                    3) In complex situations, you can use selectors and grouping methods to apply styles. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwentynine">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentynine" aria-expanded="false" aria-controls="collapseTwentynine">
+                                    29.What is the CSS Box model and what are its elements?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwentynine" class="collapse" aria-labelledby="headingTwentynine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The CSS box model is used to define the design and layout of elements of CSS.<br><br>
+
+                                    The elements are:<br><br>
+                                
+                                    <b>Margin</b> - It removes the area around the border. It is transparent.<br>
+                                    <b>Border</b> - It represents the area around the padding<br>
+                                    <b>Padding</b> - It removes the area around the content. It is transparent.<br>
+                                    <b>Content</b> - It represents the content like text, images, etc. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirty">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirty" aria-expanded="false" aria-controls="collapseThirty">
+                                    30.What is the float property of CSS?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The CSS float property is used to move the image to the right or left along with the texts to be wrapped around it. <br>
+                                    It doesn't change the property of the elements used before it.
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirtyone">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyone" aria-expanded="false" aria-controls="collapseThirtyone">
+                                    31.What is the purpose of the z-index and how is it used?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirtyone" class="collapse" aria-labelledby="headingThirtyone" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The z-index helps to specify the stack order of positioned elements that may overlap one another. The z-index default value is zero and can take on either a positive or negative number.<br><br>
+
+                                    --An element with a higher z-index is always stacked above than a lower index.<br><br>
+                                 
+                                    --Z-Index can take the following values:<br><br>
+                                
+                                    <b>Auto:</b> Sets the stack order equal to its parents.<br>
+                                    <b>Number:</b> Orders the stack order.<br>
+                                    <b>Initial:</b> Sets this property to its default value (0).<br>
+                                    <b>Inherit:</b> Inherits this property from its parent element.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirtytwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtytwo" aria-expanded="false" aria-controls="collapseThirtytwo">
+                                    32.What are CSS Sprites?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirtytwo" class="collapse" aria-labelledby="headingThirtytwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    CSS sprites combine multiple images into one single larger image. It is a commonly-used technique for icons (Gmail uses it). This is how we could implement it.<br><br>
+
+                                    1) Use a sprite generator that packs multiple images into one and generates the appropriate CSS for it.<br>
+                                    2) Each image would have a corresponding CSS class with background-image, background-position and background-size properties defined.<br>
+                                    3) To use that image, add the corresponding class to your element.
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirtythree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtythree" aria-expanded="false" aria-controls="collapseThirtythree">
+                                    33.What is the overflow property in CSS used for?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirtythree" class="collapse" aria-labelledby="headingThirtythree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The overflow property specifies what should happen if content overflows an element’s box. This property specifies whether to clip content or to add scrollbars when an element’s content is too big to fit in a specified area. <br>Below are the overflow options available in CSS – 
+
+                                    <br><br>overflow: auto;<br>
+                                
+                                    overflow: none;<br>
+                                
+                                    overflow: scroll;<br>
+                                
+                                    overflow: visible;
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirtyfour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyfour" aria-expanded="false" aria-controls="collapseThirtyfour">
+                                    34.What is responsive web design?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirtyfour" class="collapse" aria-labelledby="headingOnThirtyfour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Responsive design is an approach to web page creation that makes use of flexible layouts, flexible images and 
+                                    cascading style sheet media queries. The goal of responsive design is to build web pages that detect the visitor’s 
+                                    screen size and orientation and change the layout accordingly.
+                               
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirtyfive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyfive" aria-expanded="false" aria-controls="collapseThirtyfive">
+                                    35.What are the various font-related attributes in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirtyfive" class="collapse" aria-labelledby="headingThirtyfive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Below are the different font-related attributes available in CSS:<br><br>
+                                    <ul style="text-align:start">
+                                    <li>font-style</li>
+                                    <li>font-variant</li>
+                                    <li>font-weight</li>
+                                    <li>font-size/line-height</li>
+                                    <li>font-family</li>
+                                    <li>Caption</li>
+                                    <li>Icon</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirtysix">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtysix"" aria-expanded="false" aria-controls="collapseThirtysix"">
+                                    36.What is the use of box-shadow in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirtysix"" class="collapse" aria-labelledby="headingThirtysix"" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The box-shadow CSS property adds shadow effects around an element’s frame. You can set multiple effects separated by commas. A box-shadow is described by X and Y offsets relative to the element, color, blur and spread radii. Below are a few implementations of box-shadow<br><br>
+
+                                    <b>Ex:</b><br><br>
+                                    <b>box-shadow: 10px 5px 5px red;<br><br>
+                                    
+                                    box-shadow: 60px -16px teal;<br><br>
+                                    
+                                    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);</b>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirtyseven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyseven" aria-expanded="false" aria-controls="collapseThirtyseven">
+                                    37.How would you style an image or element to have rounded corners?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirtyseven" class="collapse" aria-labelledby="headingThirtyseven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Use the border-radius property to add rounded corners to an image. 50% will make the image circular.<br><br>
+                                    <b>Ex:</b>
+                                    border-radius: 50%;
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirtyeight">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyeight" aria-expanded="false" aria-controls="collapseThirtyeight">
+                                    38.What are contextual selectors?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirtyeight" class="collapse" aria-labelledby="headingThirtyeight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Contextual selectors in CSS allow you to specify different styles for different parts of your document. You can assign styles directly to specific HTML tags, or, you could create independent classes and assign them to tags in the HTML. <br>
+                                    --Either approach lets you mix and match styles.
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThirtynine">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtynine" aria-expanded="false" aria-controls="collapseThirtynine">
+                                    39.How can we add icons to the web page?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThirtynine" class="collapse" aria-labelledby="headingThirtynine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    1) We can add icons to the HTML webpage by using an icon library like font-awesome.<br><br>
+
+                                    2) We have to add the name of the given icon class to any inline HTML element. (&lt;i> or &lt;span>) . Icons in 
+                                    the icon libraries are scalable vectors that can be customized with CSS.
+                                
+                                </div>
+                              
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFourty">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFourty" aria-expanded="false" aria-controls="collapseFourty">
+                                    40.What is the difference between padding and margin?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFourty" class="collapse" aria-labelledby="headingFourty" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>Margin:</b><br><br>
+
+                                    The margin is the property by which we can create space around elements.<br>
+                                    We can even create space to the exterior defined borders.<br><br>
+                               
+                                    <b>Margin properties:</b><br><br>
+                               
+                                    margin-top<br>
+                                    margin-right<br>
+                                    margin-bottom<br>
+                                    margin-left<br><br>
+                               
+                                    <b>Values of Margin Property:</b><br><br>
+                               
+                                     Auto – Using this property browser calculates the margin.<br>
+                                     Length – It sets the margin values in px,pt,cm etc.<br>
+                                     % – It sets the width % of the element.<br>
+                                     Inherit – By this property we can inherit the margin property from the parent element.<br><br>
+                               
+                                    <b>Padding:</b><br><br>
+                               
+                                     Padding is the property by which we can generate space around an element’s content 
+                                     as well as inside any known border.<br><br>
+                                     --Negative values are not allowed in padding.<br><br>
+                               
+                                     <b>Padding properties:</b><br><br>
+                               
+                                     Padding-top<br>
+                                     Padding-right<br>
+                                     Padding-bottom<br>
+                                     Padding-left<br><br>
+                               
+                                     <b>Ex:</b><br><br>
+                               
+                                     div {<br>
+                                        padding-top: 60px;<br>
+                                        padding-right: 40px;<br>
+                                        padding-bottom: 50px;<br>
+                                        padding-left: 70px;<br>
+                                        margin-top: auto;
+                                        margin-left: auto;
+                                     }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfourtyone">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyOne" aria-expanded="false" aria-controls="collapsefourtyOne">
+                                    41.What is CSS Opacity?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefourtyOne" class="collapse" aria-labelledby="headingfourtyOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The opacity CSS property sets the opacity of an element. Opacity is the degree to which content behind an 
+                                    element is hidden, and is the opposite of transparency.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfourtytwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtytwo" aria-expanded="false" aria-controls="collapsefourtytwo">
+                                    42.What is the CSS display property and can you give a few examples of its use?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefourtytwo" class="collapse" aria-labelledby="headingfourtytwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The display CSS property sets whether an element is treated as a block or inline element and the layout 
+                                    used for its children, such as flow layout, grid or flex. Formally, the display property sets an element's inner and outer display types.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfoutythree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefoutythree" aria-expanded="false" aria-controls="collapsefoutythree">
+                                    43.What happens if 100% width is used along with floats all across the page?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefoutythree" class="collapse" aria-labelledby="headingfoutythree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    While making the float declaration, 1 pixel is added every time it is used in the form of the border, and   even more float is allowed thereafter.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfourtyfour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyfour" aria-expanded="false" aria-controls="collapsefourtyfour">
+                                    44.Compare RGB values with Hexadecimal color codes ?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefourtyfour" class="collapse" aria-labelledby="headingfourtyfour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    A color can be specified in two ways:<br><br>
+                                    
+                                    <b>1) </b>A color is represented by 6 characters i.e. hexadecimal color coding. It is a combination of numbers 
+                                    and letters and is preceded by #. <br>      
+                                             <b>Ex:</b> g {color: #00cjfi}<br><br>
+                                    <b>2) </b>A color is represented by a mixture of red, green and blue. The value of a color can also be specified.<br>
+                                     <b>Ex:</b> rgb(r,g,b): In this type the values can be in between the integers 0 and 255. rgb(r%,g%,b%):  red, green and blue percentage is shown.
+                                   
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfourtyfive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyfive" aria-expanded="false" aria-controls="collapsefourtyfive">
+                                    45.Define Image sprites with context to CSS ?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefourtyfive" class="collapse" aria-labelledby="headingfourtyfive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    When a set of images is collaborated into one image, it is known as ‘Image Sprites’. As the loading every image on a webpage consumes time, using image sprites lessens the time taken and gives information quickly.<br><br>
+
+                                    <b>Ex:</b><br>
+                                
+                                    <br>
+                                    img.add { width: 60px; height: 55px; background: url (image.god) 0 0; }<br><br>
+                                
+                                    img.add { width: 60px; height: 55px; background: url (image.god) 0 0; }
+                                
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfourtysix">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtysix" aria-expanded="false" aria-controls="collapsefourtysix">
+                                    46.Explain About The Hover Element?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefourtysix" class="collapse" aria-labelledby="headingfourtysix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    A hover element is activated when the user moves a pointer over the area where HTML coding is defined. This style is being extensively used 
+                                    for online advertising. It is appended to #elementid:hover.
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfourtyseven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyseven" aria-expanded="false" aria-controls="collapsefourtyseven">
+                                    47.What is at-rule?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefourtyseven" class="collapse" aria-labelledby="headingfourtyseven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Rule, which is applicable in the entire sheet and not partly, is known as at-rule. It is preceded by 
+                                    @ followed by A-Z, a-z or 0-9.
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfourtyeight">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtyeight" aria-expanded="false" aria-controls="collapsefourtyeight">
+                                    48.Can you explain the difference between px, em and rem as they relate to font sizing?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefourtyeight" class="collapse" aria-labelledby="headingfourtyeight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Pixel <b>( px )</b> is a commonly used CSS unit on websites. px is not scalable, it is an absolute unit. Change 
+                                    in the value of another element does not affect the value of absolute units. <br>Element <b>( em )</b> and Root 
+                                    element <b>( rem )</b> are responsive units interpreted into equivalent px unit by the browser.
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfourtynine">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefourtynine" aria-expanded="false" aria-controls="collapsefourtynine">
+                                    49.Explain the usage of "table-layout" property
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefourtynine" class="collapse" aria-labelledby="headingfourtynine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The table-layout property defines the algorithm used to lay out table cells, rows, and columns.<br><br>
+
+                                    <b>Syntax: </b>table-layout: auto|fixed|initial|inherit;<br><br>
+                                    
+                                    <b>auto</b> - Browsers use an automatic table layout algorithm. The column width is set by the widest unbreakable content in the cells. The content will dictate the layout.<br>
+                                    <b>fixed</b> - The layout is fixed based on the first row. Set the width of those, and the rest of the table follows. If no widths are present on the first row, the column widths are divided equally across the table, regardless of content inside the cells.<br>
+                                    <b>initial</b> - Sets this property to its default value.<br>
+                                    <b>inherit</b> - Inherits this property from its parent element.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfifty">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefifty" aria-expanded="false" aria-controls="collapsefifty">
+                                    50.What is DOM in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefifty" class="collapse" aria-labelledby="headingfifty" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>i) </b>The Document Object Model <b>(DOM)</b> is a cross-platform and language-independent application programming interface that treats an HTML, XHTML, or XML document as a tree structure wherein each node is an object representing a part of the document.<br><br>
+
+                                    <b>ii) </b>With the Document Object Model, programmers can create and build documents, navigate their structure, and add, modify, or delete elements and content. The DOM specifies interfaces which may be used to manage XML or HTML documents.<br><br>
+                               
+                                    <b>iii) </b>When a browser displays a document, it must combine the document's content with its style information. The browser converts HTML and CSS into the DOM (Document Object Model). The DOM represents the document in the computer's memory. It combines the document's content with its style.
+                            </div>
+                        </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfiftyone">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyone" aria-expanded="false" aria-controls="collapsefiftyone">
+                                    51.How can you apply the same style to multiple elements?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefiftyone" class="collapse" aria-labelledby="headingfiftyone" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    When you group CSS selectors, you apply the same styles to several different elements without repeating 
+                                    the styles in your stylesheet. Instead of having two, three, or more CSS rules that do the same thing 
+                                    (set the color of something to red, for example), you use a single CSS rule that accomplishes the same thing.
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfiftytwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftytwo" aria-expanded="false" aria-controls="collapsefiftytwo">
+                                    52.What is Alternate Style Sheet?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefiftytwo" class="collapse" aria-labelledby="headingfiftytwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    1) Alternate Style Sheets allows the user to select the style in which the page is displayed using the 
+                                    view>page style menu.<br>2) Through Alternate Style Sheet, user can see a multiple version of the page on their needs and preferences.
+                                   
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfiftythree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftythree" aria-expanded="false" aria-controls="collapsefiftythree">
+                                    53.Enlist the various Media types used?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefiftythree" class="collapse" aria-labelledby="headingfiftythree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Different media has different properties as they are case insensitive.<br><br>
+
+                                    They are:<br><br>
+                                
+                                    <b>Aural</b> – for sound synthesizers and speech.<br>
+                                    <b>Print</b> – gives a preview of the content when printed.<br>
+                                    <b>Projection</b>- projects the CSS on projectors.<br>
+                                    <b>Handheld</b>- uses handheld devices.<br>
+                                    <b>Screen</b>- computers and laptop screens.
+
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfiftyfour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyfour" aria-expanded="false" aria-controls="collapsefiftyfour">
+                                    54.What are the existing CSS frameworks?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefiftyfour" class="collapse" aria-labelledby="headingfiftyfour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>Bootstrap</b> - Slow release cycle. Bootstrap 4 has been in alpha for almost 2 years. Add a spinner button component, as it is widely used.<br>
+                                    <b>Semantic UI</b> - Source code structure makes theme customization extremely hard to understand. <br>
+                                       Its unconventional theming system is a pain to customize. Hardcoded config path within the vendor library.<br>
+                                       <b>Not well</b>-designed for overriding variables unlike in Bootstrap.<br>
+                                    <b>Bulma</b> - A lot of non-semantic and superfluous classes and markup required. Not backward compatible. <br>
+                                       Upgrading versions breaks the app in subtle manners.
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfiftyfive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyfive" aria-expanded="false" aria-controls="collapsefiftyfive">
+                                    55.Why css selectors mixed up with cases don't apply the styles?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefiftyfive" class="collapse" aria-labelledby="headingfiftyfive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Because, html ID and classes are case sensitive.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfiftysix">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftysix" aria-expanded="false" aria-controls="collapsefiftysix">
+                                    56.What is the use of css ruleset?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefiftysix" class="collapse" aria-labelledby="headingfiftysix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    CSS is a rule or set of rules that describe the formatting (change of appearance) of individual elements on a web page. The rule consists of two parts: the selector and the next declaration block.
+                                    <br><br>
+
+	                                    <b>Ex:</b><br>
+                                            div {<br>
+                                                color: blue;<br>
+                                                text-align: justify;<br>
+                                            }<br><br>
+                                        <b>Explanation:</b><br>
+	                                1) The first is always the selector, it tells the browser which element or elements of the web page will 
+	                                be styled.<br>
+	
+	                                2) Next is the declaration block, which begins with the opening curly brace { and ends with the closing },
+ 	                                between the curly braces are specified formatting commands (declarations), which are used by the browser to stylize the selected selector element.<br>
+	
+	                                3) Each declaration consists of two parts: the property and its value. The declaration must always end 
+	                                with a semicolon (;). You can omit the ; only at the end of the last declaration before the closing curly brace.<br>
+	
+	                                4) A property is a formatting command that defines a specific style effect for an element. Each property 
+	                                has its own predefined set of values. After the property name, a colon is specified, which separates the property name from the valid value.<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfiftyseven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyseven" aria-expanded="false" aria-controls="collapsefiftyseven">
+                                    57.Explain the difference between visibility: hidden; and display: none;?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefiftyseven" class="collapse" aria-labelledby="headingfiftyseven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>visibility: hidden-</b> Simply hides the element but it will occupy space and affect the layout of the document.<br>
+                                    <br>
+                                    <b>display:none-</b> Removes the element from the normal layout flow (causes DOM reflow). It will not affect the 
+                                    layout of the document nor occupy space.<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfiftyeight">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftyeight" aria-expanded="false" aria-controls="collapsefiftyeight">
+                                    58.What is the difference between border-box and content-box?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefiftyeight" class="collapse" aria-labelledby="headingfiftyeight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <mark>content-box</mark> – Default box-sizing property. The width and height properties (and min/max properties) 
+                                        includes only the content. Border and padding are not included.<br>
+
+                                    <mark>border-box</mark> – The width and height properties (and min/max properties) includes content, padding and border.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingfiftynine">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefiftynine" aria-expanded="false" aria-controls="collapsefiftynine">
+                                    59.Explain the meaning of each of these CSS units for expressing length?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsefiftynine" class="collapse" aria-labelledby="headingfiftynine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>cm-</b> centimeters<br>
+                                    <b>em-</b> elements (i.e., relative to the font-size of the element; e.g., 2 em means 2 times the current font size)<br>
+                                    <b>in-</b> inches<br>
+                                    <b>mm-</b> millimeters<br>
+                                    <b>pc-</b> picas (1 pc = 12 pt = 1/6th of an inch)<br>
+                                    <b>pt-</b> points (1 pt = 1/72nd of an inch)<br>
+                                    <b>px-</b> pixels (1 px = 1/96th of an inch)<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixty">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixty" aria-expanded="false" aria-controls="collapsesixty">
+                                    60.What is the purpose of the box-sizing property?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixty" class="collapse" aria-labelledby="headingsixty" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The box-sizing CSS property sets how the total width and height of an element is calculated.<br><br>
+                                    <b>Property Values:</b><br><br>
+                                    <b>1) content-box:</b> the default width and height values apply to the element's content only. The padding and border are added to the outside of the box.<br>
+                                    <b>2) padding-box:</b> Width and height values apply to the element's content and its padding. The border is added to the outside of the box. Currently, only Firefox supports the padding-box value.<br>
+                                    <b>3) border-box:</b> Width and height values apply to the content, padding, and border.<br>
+                                    <b>4) inherit:</b> inherits the box sizing of the parent element.<br><br>
+                                    <b>Example:</b><br>
+                                        {<br>
+                                        box-sizing: content-box;<br>
+	                                    width: 100%;<br>
+	                                    border: solid rgb(90,107,204) 10px;<br>
+	                                    padding: 5px;<br>
+                                        }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixtyOne">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyOne" aria-expanded="false" aria-controls="collapsesixtyOne">
+                                    61.What is the difference between RGBa, HEX and HSLa?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixtyOne" class="collapse" aria-labelledby="headingsixtyOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>RGB (Red/Green/Blue)</b> is a color model.<br><br>
+                                    
+                                    p {<br>
+                                          color: rgba(37, 84, 127, 1);<br>
+                                    }<br><br>
+
+                                    <b>HEX (Hexadecimal color values)</b><br><br>
+                                    p {<br>
+                                          color: #25547f;<br>
+                                    }<br><br>
+
+                                    <b>HSLa (Hue Saturation Lightness alpha)</b><br><br>
+                                    p {<br>
+                                          color: hsla(209, 55%, 32%, 1);<br>
+                                    }<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixtytwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtytwo" aria-expanded="false" aria-controls="collapsesixtytwo">
+                                    62.What is CSS preprocessor?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixtytwo" class="collapse" aria-labelledby="headingsixtytwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    1) Pre-processors extend CSS with variables, operators, interpolations, functions, mixins and many more other
+                                    usable assets.<br> 2) After development, these specific files are compiled into regular CSS that any browser can understand. <br>
+                                    3) Pre-processor help writing reusable, easily maintainable and extensible codes in CSS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixtythree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtythree" aria-expanded="false" aria-controls="collapsesixtythree">
+                                    63.What are types of CSS preprocessesors?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixtythree" class="collapse" aria-labelledby="headingsixtythree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>CSS preprocessors:</b>
+                                    <ul>
+                                    <li>SASS (SCSS)</li>
+                                    <li>LESS</li>
+                                    <li>Stylus</li>
+                                    <li>PostCSS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixtyfour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyfour" aria-expanded="false" aria-controls="collapsesixtyfour">
+                                    64.What are the advantage of CSS preprocessesor?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixtyfour" class="collapse" aria-labelledby="headingsixtyfour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>1)</b> CSS is made more maintainable.<br>
+                                    <b>2)</b> Easy to write nested selectors.<br>
+                                    <b>3) </b>Variables for consistent theming. Can share theme files across different projects.<br>
+                                    <b>4) </b>Mixins to generate repeated CSS.<br>
+                                    <b>5) </b>Splitting your code into multiple files. CSS files can be split up too but doing so will require an 
+                                    HTTP request to download each CSS file.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixtyfive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyfive" aria-expanded="false" aria-controls="collapsesixtyfive">
+                                    65.List display property in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixtyfive" class="collapse" aria-labelledby="headingsixtyfive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The display property specifies the display behavior (the type of rendering box) of an element.<br><br>
+	                                <b>Property values:</b><br><br>
+
+	                                    display: none;<br>
+	                                    display: inline;<br>
+	                                    display: block;<br>
+	                                    display: inline-block;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixtysix">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtysix" aria-expanded="false" aria-controls="collapsesixtysix">
+                                    66.How can the gap under the image be removed?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixtysix" class="collapse" aria-labelledby="headingsixtysix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    As images being inline elements are treated same as texts, so there is a gap left, which can be removed.<br>
+
+                                    <b>Ex:</b><br><br>
+	                                &lt;figure&gt;<br>
+                                    &lt;img style="display: block" src="..." alt=""&gt;<br>
+	                                &lt;/figure&gt;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixtyseven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyseven" aria-expanded="false" aria-controls="collapsesixtyseven">
+                                    67.Which property is used to add or subtract space between the letters that make up a word?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixtyseven" class="collapse" aria-labelledby="headingsixtyseven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The <mark>letter-spacing</mark> property is used to add or subtract space between the letters that make up a word.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixtyeight">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtyeight" aria-expanded="false" aria-controls="collapsesixtyeight">
+                                    68.Which property gives the decoration to a text and write properties?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixtyeight" class="collapse" aria-labelledby="headingsixtyeight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <dl>
+                                        The text-decoration property is used to decorate the text.<br>
+                                        The property values are:<br><br>
+ 
+                                        1. text-decorative:underline, <br>
+                                        2. text-decorative:overline, and <br>
+                                        3. text-decorative:strikethrough<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingsixtynine">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesixtynine" aria-expanded="false" aria-controls="collapsesixtynine">
+                                    69.What is word-wrapping in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsesixtynine" class="collapse" aria-labelledby="headingsixtynine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The word-wrap property in CSS is used to break long word and wrap into the next line. It defines whether to break words when the content exceeds the boundaries of its container.<br><br>
+
+	                                <b>Syntax:</b>  
+
+	                                     word-wrap: normal|break-word|initial|inherit;<br><br>
+
+	                                <b>Property values:</b><br><br>
+		                                normal:	Break words only at allowed break points<br>
+		                                break-word:Allows unbreakable words to be broken<br>
+		                                initial:Sets this property to its default value.<br>
+		                                inherit:Inherits this property from its parent element.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventy">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventy" aria-expanded="false" aria-controls="collapseseventy">
+                                    70.What is a declaration block?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventy" class="collapse" aria-labelledby="headingseventy" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    It is basically a catalog of directions comprising the property, followed by a colon, and finally the 
+                                    value enclosed within braces.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventyOne">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyOne" aria-expanded="false" aria-controls="collapseseventyOne">
+                                    71.Define CSS frameworks?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventyOne" class="collapse" aria-labelledby="headingseventyOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    CSS frameworks are pre-planned libraries, which allow much easier and more standard-compliant designing 
+                                    and styling of a webpage by using CSS language.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventytwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventytwo" aria-expanded="false" aria-controls="collapseseventytwo">
+                                    72.Compare Grouping and Nesting in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventytwo" class="collapse" aria-labelledby="headingseventytwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>Grouping:</b>  In grouping, the code can be reduced by literally grouping selectors that have the same properties or values. <br><br>
+
+                                    <b>Nesting:</b> In nesting, a selector is specified within another selector.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventythree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventythree" aria-expanded="false" aria-controls="collapseseventythree">
+                                    73.What are CSS gradients?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventythree" class="collapse" aria-labelledby="headingseventythree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Gradients in CSS allows us to create a smooth transformation between two or more colors. There are two 
+                                    types of gradients we can use in CSS:<br> 1) Linear Gradient and<br> 2)Radial Gradient.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventyfour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyfour" aria-expanded="false" aria-controls="collapseseventyfour">
+                                    74.How would you set a h2 and h3 to have the same styling?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventyfour" class="collapse" aria-labelledby="headingseventyfour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    We can set multiple elements with the same style by separating items with a comma (,).<br><br> 
+
+	                                <b>Example:</b><br><br>
+
+	                                h2, h3 {<br>
+
+		                                color: yellow;<br>
+
+	                                }
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventyfive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyfive" aria-expanded="false" aria-controls="collapseseventyfive">
+                                    75.How would you add Google fonts to a webpage?
+
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventyfive" class="collapse" aria-labelledby="headingseventyfive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The <link> tag is used to add google fonts in the head section of the html page. <br><br>
+     
+                                    <b>Syntax:</b><br>
+
+                                            <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"><br>
+                                            font-family: 'Balsamiq Sans', cursive;
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventysix">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventysix" aria-expanded="false" aria-controls="collapseseventysix">
+                                    76.Which float value will adopt the float property of its parent?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventysix" class="collapse" aria-labelledby="headingseventysix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    If we set float: inherit; on an element, it will inherit the value of float property from its parent 
+                                    element.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventyseven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyseven" aria-expanded="false" aria-controls="collapseseventyseven">
+                                    77.What are all the properties of the CSS flexbox?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventyseven" class="collapse" aria-labelledby="headingseventyseven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    There are six properties of the flexbox:<br><br>
+
+                                    <b>1) </b>flex-direction<br>
+                                    <b>2) </b>flex-wrap<br>
+                                    <b>3) </b>justify-content<br>
+                                    <b>4) </b>align-items<br>
+                                    <b>5) </b>flex-flow<br>
+                                    <b>6) </b>align-content<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventyeight">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventyeight" aria-expanded="false" aria-controls="collapseseventyeight">
+                                    78.What do you know about CSS Transitions?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventyeight" class="collapse" aria-labelledby="headingseventyeight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    CSS Transitions allows to add an effect while changing from one style to another. You can set the which 
+                                    property you want to transition, duration, how you want to transit and delay when transition will start.<br><br>
+
+	                                <b>Properties:</b><br><br>
+	
+                                        <b>1. transition:</b>	A shorthand property for setting the four transition properties into a single property<br>
+	                                    <b>2. transition-delay:</b>	Specifies a delay (in seconds) for the transition effect<br>
+	                                    <b>3. transition-duration:</b>	Specifies how many seconds or milliseconds a transition effect takes to complete<br>
+	                                    <b>4. transition-property:</b>	Specifies the name of the CSS property the transition effect is for<br>
+	                                    <b>5. transition-timing-function:</b>	Specifies the speed curve of the transition effect<br>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingseventynine">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseventynine" aria-expanded="false" aria-controls="collapseseventynine">
+                                    79.Enlist the various background properties css?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseseventynine" class="collapse" aria-labelledby="headingseventynine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>background-color</b>	Specifies the background color to be used<br>
+                                    <b>background-image</b>	Specifies ONE or MORE background images to be used<br>
+                                <b>background-position</b>	Specifies the position of the background images<br>
+                                <b>background-size</b>	        Specifies the size of the background images<br>
+                                <b>background-repeat</b>	Specifies how to repeat the background images<br>
+                                <b>background-origin</b>	Specifies the positioning area of the background images<br>
+                                <b>background-clip</b>	        Specifies the painting area of the background images<br>
+                                <b>background-attachment</b>	Specifies whether the background images are fixed or scrolls with the rest of the page<br>
+                                <b>initial</b>			Sets this property to its default value.<br>
+                                <b>inherit</b>	  		Inherits this property from its parent element<br>
+                            
+                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeighty">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeighty" aria-expanded="false" aria-controls="collapseeighty">
+                                    80.What are the advantages of using translate() instead of absolute position?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeighty" class="collapse" aria-labelledby="headingeighty" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Translate() does not cause the browser to trigger repaint and layout and instead only acts on the compositor.<br> 
+                                    The absolute position triggers the repaint or DOM reflow. So, translate() gives the better performance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeightyOne">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyOne" aria-expanded="false" aria-controls="collapseeightyOne">
+                                    81.Which property can control the position of an image in the background?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeightyOne" class="collapse" aria-labelledby="headingeightyOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The position of the image in the background can be controlled using the “background-position” property.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeightytwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightytwo" aria-expanded="false" aria-controls="collapseeightytwo">
+                                    82.How CSS3 differ from CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeightytwo" class="collapse" aria-labelledby="headingeightytwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    CSS was mostly constructed to format HTML documents, but CSS3 is more helpful in crafting good web designs, 
+                                    animation. CSS did not have all the required features, but CSS3 has them all(mostly) like layer design and 
+                                    page elements. CSS3, unlike CSS, can split into modules.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeeightythree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightythree" aria-expanded="false" aria-controls="collapseeightythree">
+                                    83.Why do we use the word-break property in CSS3?
+                                                                
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeightythree" class="collapse" aria-labelledby="headingeightythree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    To define how words would break when we reach the end of a line, we use the word-break property.<br><br>
+	
+	                                <b>Ex:</b><br>
+		                                p {<br>
+   			                                word-break: break-all;<br>
+		                                }
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeightyfour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyfour" aria-expanded="false" aria-controls="collapseeightyfour">
+                                    84.What is the way to add a border image to an element? 
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeightyfour" class="collapse" aria-labelledby="headingeightyfour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    An image could be used as a border to an element with the help of border-image property.<br><br>
+
+                                    <b>Ex:</b><br>
+                                    #img {<br>
+                                        padding: 15px;<br>
+                                        border: 10px solid transparent;<br>
+                                        border-image: url(border.png) 30 round;<br>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeightyfive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyfive" aria-expanded="false" aria-controls="collapseeightyfive">
+                                    85.How is responsive design different from adaptive design?
+  
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeightyfive" class="collapse" aria-labelledby="headingeightyfive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Both responsive and adaptive design attempt to optimize the user experience across different devices, 
+                                    adjusting for different viewport sizes, resolutions, usage contexts, control mechanisms, and so on.<br><br>
+
+                                     <b>Responsive Design:</b><br><br>
+
+                                        Responsive design works on the principle of flexibility — a single fluid website that can look good on any
+                                        device. Responsive websites use media queries, flexible grids, and responsive images to create a user 
+                                        experience that flexes and changes based on a multitude of factors. Like a single ball growing or shrinking to fit through several different hoops.<br><br>
+      
+                                        <b>Adaptive Design:</b><br><br>
+
+                                        Adaptive design is more like the modern definition of progressive enhancement. Instead of one flexible 
+                                        design, adaptive design detects the device and other features, and then provides the appropriate feature 
+                                        and layout based on a predefined set of viewport sizes and other characteristics. The site detects the 
+                                        type of device used, and delivers the pre-set layout for that device. Instead of a single ball going 
+                                        through several different-sized hoops, you’d have several different balls to use depending on the hoop size.                                                
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeightysix">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightysix" aria-expanded="false" aria-controls="collapseeightysix">
+                                    86.Explain about RGB Stream in CSS? 
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeightysix" class="collapse" aria-labelledby="headingeightysix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    RGB is a color representation scheme used in CSS. In this nomenclature for describing colors, there are 
+                                    three streams: red, green, and blue. The three colors’ intensities are expressed by numbers varying from 0 to 256. This enables CSS to support
+                                    a broad variety of colors spanning the entire visual spectrum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeightyseven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyseven" aria-expanded="false" aria-controls="collapseeightyseven">
+                                    87.How are logical and physical tags different? 
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeightyseven" class="collapse" aria-labelledby="headingeightyseven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Physical tags are referred to as presentational markup, while logical tags are rendered ineffective in terms of display. <br><br>
+
+                                    <b>1) </b>Physical tags are more recent versions <br>
+                                    <b>2) </b>logical tags, on the other hand, are older and focus on substance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeightyeight">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightyeight" aria-expanded="false" aria-controls="collapseeightyeight">
+                                    88.Why are the background and colors treated asDistinct properties? 
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeightyeight" class="collapse" aria-labelledby="headingeightyeight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    This is based on primarily two reasons: <br><br>
+
+                                    <b>1) </b>It improves the legibility of the style sheets. The background property, which is complex in and of itself, becomes exponentially more 
+                                     complicated when combined with color. <br><br>
+
+                                    <b>2) </b>Although the color is an inherent property, the background is not. And this may create a great deal of confusion.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeightynine">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseeightynine" aria-expanded="false" aria-controls="collapseeightynine">
+                                    89.What are the benefits of using External Style Sheets? 
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseeightynine" class="collapse" aria-labelledby="headingeightynine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>Benefits :</b><br><br>
+
+	                                1) Numerous documentation can exist for various HTML components, as well as numerous groups. <br>
+	                                2) Similar formats may be used to manage several documents of varying types. <br>
+	                                3) In composite contexts, selector and grouping approaches may be used to group types. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingeninty">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseninty" aria-expanded="false" aria-controls="collapseninty">
+                                    90.What are drawbacks os using External Style Sheets?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseninty" class="collapse" aria-labelledby="headingninty" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <b>Drawbacks :</b><br><br>
+
+	                                1) External style sheets must be loaded in order to make the pdf. <br>
+	                                2) It is incompatible with short-form descriptions. <br>
+	                                3) A separate download is needed to import documents that provide style material.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingnintyone">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyone" aria-expanded="false" aria-controls="collapsenintyone">
+                                    91.What are the defined dimension properties?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsenintyone" class="collapse" aria-labelledby="headingnintyone" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The defined dimension properties are <br><br>
+
+	                                <b>Height, <br>
+	                                Min-height, <br>
+	                                Max-height, <br>
+	                                Width, <br>
+	                                Min-Width, and <br>
+	                                Max-Width.</b>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingnintytwo">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintytwo" aria-expanded="false" aria-controls="collapsenintytwo">
+                                    92.Is it possible to make a class selector for a particular element and How?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsenintytwo" class="collapse" aria-labelledby="headingnintytwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Yes, we can make a class selector for a particular element.<br><br>
+
+	                                <b>Ex:</b><br><br>
+		                            h2.className{<br>
+			                        Color: #FFFF;<br>
+		                            }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingnintythree">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintythree" aria-expanded="false" aria-controls="collapsenintythree">
+                                    93.How to style the first line of paragraph as uppercase?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsenintythree" class="collapse" aria-labelledby="headingnintythree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    The :first-line pseudo-element is used to style the first formatted line of a paragraph by using text-transform property with value uppercase.<br><br>
+
+                                    <b>Ex: </b>
+
+                                         p:first-line { text-transform: uppercase }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingnintyfour">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyfour" aria-expanded="false" aria-controls="collapsenintyfour">
+                                    94. How to render the first letter of a paragraph with red color and red border?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsenintyfour" class="collapse" aria-labelledby="headingnintyfour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Pseudoclass :first-letter can refer to the first letter of the element, paragraph as below. It is clean approach without enclosing the first 
+                                    letter in span tag and applying the required rule based on the representation.<br><br>
+
+	                                <b>Ex:</b><br><br>
+
+	                                <i><b>HTML</b></i><br>
+	                                &lt;p&gt;Booker T&lt;/p&gt;<br><br>
+	                                <i><b>CSS</b></i><br>
+	
+	                                html {<br>
+  	                                    font-size: 3rem;<br>
+	                                }<br><br>
+ 
+	                                p::first-letter {<br>
+	                                    border: 1px solid;<br>
+	                                    font-weight: bold;<br>
+	                                     color: red; <br>
+	                                }
+                            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingnintyfive">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyfive" aria-expanded="false" aria-controls="collapsenintyfive">
+                                    95.What is Responsive Web design?
+
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsenintyfive" class="collapse" aria-labelledby="headingnintyfive" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Responsive Web design is the method that recommends that design and development should reply to the user’s activities and situation based on 
+                                    various components such as size of the screen, the platform and the orientation. The preparation comprises of a mix of flexible layouts and 
+                                    grids, images and an intellectual use of CSS media queries.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingnintysix">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintysix" aria-expanded="false" aria-controls="collapsenintysix">
+                                    96.How do I eliminate the blue border around linked Images?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsenintysix" class="collapse" aria-labelledby="headingnintysix" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    In CSS, we can specify the border property for linked images<br><br>
+	                            <b>Ex:</b>
+
+	                                a img { border: none ; }
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingnintyseven">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyseven" aria-expanded="false" aria-controls="collapsenintyseven">
+                                    97.What is Wrapping in CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsenintyseven" class="collapse" aria-labelledby="headingnintyseven" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Wrapping is a vital property for proper display of contents in web pages. If wrapping is disabled then the user could not display and view 
+                                    long lines that goes outside the window boundary and thus becomes useless. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingnintyeight">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintyeight" aria-expanded="false" aria-controls="collapsenintyeight">
+                                    98.Explain about some of the features of CSS?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsenintyeight" class="collapse" aria-labelledby="headingnintyeight" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Some of the features used by CSS are to define a layout, colors, fonts, etc. It separates the content from the design part which makes the 
+                                    content much more visible thereby improving productivity of the entire process. It can make the same page appear in different formats.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingnintynine">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsenintynine" aria-expanded="false" aria-controls="collapsenintynine">
+                                    99.Explain about the rules present in Style Sheets?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapsenintynine" class="collapse" aria-labelledby="headingnintynine" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    A huge list of rules is defined for style sheets. Each rule consists of selectors and declaration block. A declaration block consists of 
+                                    declarations which can be defined and separated by using a semicolon within curly braces. Also each declaration consists of a colon, 
+                                    a property and a semicolon.  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingHundred">
+                                <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseHundred" aria-expanded="false" aria-controls="collapseHundred">
+                                    100.What are the main goals of applying Style Sheets?
+                                </button>
+                                </h2>
+                            </div>
+                            <div id="collapseHundred" class="collapse" aria-labelledby="headingHundred" data-parent="#accordionExample">
+                                <div class="card-body">
+                                   <b>1) </b> The main use of style sheet is to give the user a greater degree of control over his presentation. If the user does not like a certain font 
+                                    he can change it with flexibility without any difficulty.<br><br>
+
+                                    <b>2) </b>Also a developer can minimize the effects which a browser can have on the application or the text part of the webpage.<br><br>
+
+                                    <b>3) </b>Control over the entire web page without any external influences, separation of the page from the HTML code part.
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
